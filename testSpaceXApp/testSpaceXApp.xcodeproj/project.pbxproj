@@ -9,17 +9,23 @@
 /* Begin PBXBuildFile section */
 		3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16928A3B12F00210ADE /* AppDelegate.swift */; };
 		3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16B28A3B12F00210ADE /* SceneDelegate.swift */; };
-		3B53D16E28A3B12F00210ADE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16D28A3B12F00210ADE /* ViewController.swift */; };
+		3B53D16E28A3B12F00210ADE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16D28A3B12F00210ADE /* MainViewController.swift */; };
 		3B53D17328A3B13200210ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B53D17228A3B13200210ADE /* Assets.xcassets */; };
+		3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18328A3C5DE00210ADE /* DataView.swift */; };
+		3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18728A3CA9000210ADE /* UIStackView + Extensions.swift */; };
+		3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B53D16628A3B12F00210ADE /* testSpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B53D16928A3B12F00210ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B53D16B28A3B12F00210ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B53D16D28A3B12F00210ADE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B53D16D28A3B12F00210ADE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3B53D17228A3B13200210ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B53D17728A3B13200210ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B53D18328A3C5DE00210ADE /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		3B53D18728A3CA9000210ADE /* UIStackView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extensions.swift"; sourceTree = "<group>"; };
+		3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		3B53D16828A3B12F00210ADE /* testSpaceXApp */ = {
 			isa = PBXGroup;
 			children = (
+				3B53D18528A3CA5700210ADE /* Extensions */,
 				3B53D17D28A3B76B00210ADE /* Application */,
 				3B53D18028A3B7AF00210ADE /* View */,
 				3B53D18128A3B7B700210ADE /* Resources */,
@@ -72,7 +79,8 @@
 		3B53D17F28A3B7A600210ADE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3B53D16D28A3B12F00210ADE /* ViewController.swift */,
+				3B53D16D28A3B12F00210ADE /* MainViewController.swift */,
+				3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -80,6 +88,7 @@
 		3B53D18028A3B7AF00210ADE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B53D18228A3C5BD00210ADE /* MainVC */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,6 +100,30 @@
 				3B53D17728A3B13200210ADE /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3B53D18228A3C5BD00210ADE /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				3B53D18328A3C5DE00210ADE /* DataView.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		3B53D18528A3CA5700210ADE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B53D18628A3CA6A00210ADE /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B53D18628A3CA6A00210ADE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3B53D18728A3CA9000210ADE /* UIStackView + Extensions.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B53D16E28A3B12F00210ADE /* ViewController.swift in Sources */,
+				3B53D16E28A3B12F00210ADE /* MainViewController.swift in Sources */,
+				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
+				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
+				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
