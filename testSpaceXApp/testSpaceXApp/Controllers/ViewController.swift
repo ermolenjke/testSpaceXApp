@@ -11,7 +11,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#function) 
+        print(#function)
+        view.backgroundColor = .orange
     }
 
 
