@@ -32,11 +32,11 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .orange
         
-        setupView()
+        setupViews()
         setConstrains()
     }
     
-    private func setupView() {
+    private func setupViews() {
         
         view.addSubview(scrollView)
         scrollView.addSubview(rocketImageView)

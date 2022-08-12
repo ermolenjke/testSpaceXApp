@@ -30,7 +30,7 @@ class DataView: UIView {
             return label
         }()
     
-    var topStackView = UIStackView()
+    private var topStackView = UIStackView()
     
     override init(frame: CGRect) {
             super.init(frame: frame)

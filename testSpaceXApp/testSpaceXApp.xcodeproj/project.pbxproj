@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8D628A641C300B45ED2 /* LaunchTableViewCell.swift */; };
+		3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8D828A6468700B45ED2 /* UIColor + Extensions.swift */; };
+		3B0FF8DB28A646E100B45ED2 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8DA28A646E100B45ED2 /* Resources.swift */; };
+		3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */; };
+		3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8DE28A668E600B45ED2 /* UILabel + Extensions.swift */; };
+		3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8E128A66C0F00B45ED2 /* SettingsTableViewCell.swift */; };
 		3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16928A3B12F00210ADE /* AppDelegate.swift */; };
 		3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16B28A3B12F00210ADE /* SceneDelegate.swift */; };
 		3B53D16E28A3B12F00210ADE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16D28A3B12F00210ADE /* MainViewController.swift */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B0FF8D628A641C300B45ED2 /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
+		3B0FF8D828A6468700B45ED2 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		3B0FF8DA28A646E100B45ED2 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3B0FF8DE28A668E600B45ED2 /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
+		3B0FF8E128A66C0F00B45ED2 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		3B53D16628A3B12F00210ADE /* testSpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B53D16928A3B12F00210ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B53D16B28A3B12F00210ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +51,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0FF8D528A640FD00B45ED2 /* LaunchVC */ = {
+			isa = PBXGroup;
+			children = (
+				3B0FF8D628A641C300B45ED2 /* LaunchTableViewCell.swift */,
+			);
+			path = LaunchVC;
+			sourceTree = "<group>";
+		};
+		3B0FF8E028A66BE900B45ED2 /* SettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				3B0FF8E128A66C0F00B45ED2 /* SettingsTableViewCell.swift */,
+			);
+			path = SettingsVC;
+			sourceTree = "<group>";
+		};
 		3B53D15D28A3B12F00210ADE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,7 @@
 			children = (
 				3B53D16D28A3B12F00210ADE /* MainViewController.swift */,
 				3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */,
+				3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -88,6 +117,8 @@
 		3B53D18028A3B7AF00210ADE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B0FF8E028A66BE900B45ED2 /* SettingsVC */,
+				3B0FF8D528A640FD00B45ED2 /* LaunchVC */,
 				3B53D18228A3C5BD00210ADE /* MainVC */,
 			);
 			path = View;
@@ -98,6 +129,7 @@
 			children = (
 				3B53D17228A3B13200210ADE /* Assets.xcassets */,
 				3B53D17728A3B13200210ADE /* Info.plist */,
+				3B0FF8DA28A646E100B45ED2 /* Resources.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -122,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				3B53D18728A3CA9000210ADE /* UIStackView + Extensions.swift */,
+				3B0FF8D828A6468700B45ED2 /* UIColor + Extensions.swift */,
+				3B0FF8DE28A668E600B45ED2 /* UILabel + Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -196,10 +230,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B53D16E28A3B12F00210ADE /* MainViewController.swift in Sources */,
+				3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */,
+				3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */,
 				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
+				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
 				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
+				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
+				3B0FF8DB28A646E100B45ED2 /* Resources.swift in Sources */,
+				3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */,
 				3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
