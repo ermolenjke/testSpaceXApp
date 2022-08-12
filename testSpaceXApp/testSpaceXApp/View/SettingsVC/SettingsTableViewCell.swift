@@ -16,6 +16,8 @@ class SettingsTableViewCell: UITableViewCell {
         segmentControl.selectedSegmentTintColor = .white
         segmentControl.selectedSegmentIndex = 0
         segmentControl.tintColor = Resources.Colors.specialBackgroundGray
+        segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: UIControl.State.selected)
+        segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: UIControl.State.normal)
         segmentControl.addTarget(self, action: #selector(segmentControl(_:)), for: .valueChanged)
         segmentControl.translatesAutoresizingMaskIntoConstraints = false
         return segmentControl
@@ -36,16 +38,7 @@ class SettingsTableViewCell: UITableViewCell {
        }
     
     @objc func segmentControl(_ segmentedControl: UISegmentedControl) {
-       switch (segmentedControl.selectedSegmentIndex) {
-          case 0:
-             print(1)
-          break
-          case 1:
-           print(2)
-          break
-          default:print("nothing")
-          break
-       }
+       
     }
    
    private func setupViews() {
@@ -59,7 +52,7 @@ class SettingsTableViewCell: UITableViewCell {
                                            axis: .horizontal,
                                            spacing: 10)
        horizontalDataLaunchStack.distribution = .fillProportionally
-               addSubview(horizontalDataLaunchStack)
+       contentView.addSubview(horizontalDataLaunchStack)
        
    }
 

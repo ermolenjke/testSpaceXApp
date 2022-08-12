@@ -49,7 +49,7 @@ class SettingsViewController: UIViewController {
     }
     
     private func setDelegates() {
-        
+
         settingsTableView.delegate = self
         settingsTableView.dataSource = self
     }
@@ -60,7 +60,6 @@ class SettingsViewController: UIViewController {
                                             axis: .horizontal,
                                             spacing: 10)
         view.addSubview(horizontalLabelsStack)
-        
         view.addSubview(settingsTableView)
     }
     private func setContrains() {
@@ -85,7 +84,7 @@ class SettingsViewController: UIViewController {
 extension SettingsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

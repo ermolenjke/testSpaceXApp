@@ -15,6 +15,31 @@ enum Resources {
         static let specialBackgroundGray = UIColor(hexString: "#121212")
         
     }
+    
+    enum SegmentedControl {
+        static func items(for unit: String) -> UISegmentedControl {
+            switch unit {
+            case "mft":
+                let segmentControl = UISegmentedControl(items: ["m", "ft"])
+                segmentControl.selectedSegmentTintColor = .white
+                segmentControl.selectedSegmentIndex = 0
+                segmentControl.tintColor = Resources.Colors.specialBackgroundGray
+                segmentControl.translatesAutoresizingMaskIntoConstraints = false
+                return segmentControl
+            case "kglb":
+                let segmentControl = UISegmentedControl(items: ["kg", "kb"])
+                segmentControl.selectedSegmentTintColor = .white
+                segmentControl.selectedSegmentIndex = 0
+                segmentControl.tintColor = Resources.Colors.specialBackgroundGray
+                segmentControl.translatesAutoresizingMaskIntoConstraints = false
+                return segmentControl
+            default:
+                return UISegmentedControl(items: nil)
+            }
+            
+        }
+        
+    }
 
 //    enum Strings {
 //        enum TabBar {
