@@ -20,11 +20,20 @@ class MainViewController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "falcon9")
         imageView.contentMode = .scaleAspectFill
-//        imageView.clipsToBounds = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
-
+    
+    private let qqq: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = Resources.Colors.specialGray
+        button.layer.cornerRadius = 10
+        button.setTitle("qqq qqq", for: .normal)
+        button.tintColor = .white
+        button.addTarget(self, action: #selector(qqqq), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
     private let dataView = DataView()
     
@@ -36,11 +45,27 @@ class MainViewController: UIViewController {
         setConstrains()
     }
     
+    @objc func qqqq() {
+        let set = SettingsViewController()
+        navigationController?.pushViewController(set, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     private func setupViews() {
         
         view.addSubview(scrollView)
         scrollView.addSubview(rocketImageView)
         scrollView.addSubview(dataView)
+        scrollView.addSubview(qqq)
     }
     
     private func setConstrains() {
@@ -59,6 +84,14 @@ class MainViewController: UIViewController {
             rocketImageView.heightAnchor.constraint(equalToConstant: 300)
         ])
         
+        NSLayoutConstraint.activate([
+            qqq.topAnchor.constraint(equalTo: dataView.topAnchor, constant: 200),
+            qqq.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            qqq.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            qqq.heightAnchor.constraint(equalToConstant: 100),
+        ])
+        
+            
         NSLayoutConstraint.activate([
             dataView.topAnchor.constraint(equalTo: rocketImageView.bottomAnchor, constant: -60),
             dataView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),

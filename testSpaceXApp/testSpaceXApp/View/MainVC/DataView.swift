@@ -30,7 +30,19 @@ class DataView: UIView {
             return label
         }()
     
+    private let showLaunchesButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = Resources.Colors.specialGray
+        button.layer.cornerRadius = 10
+        button.setTitle("Посмотреть запуски", for: .normal)
+        button.tintColor = .white
+        button.addTarget(self, action: #selector(showLaunchesButtonTapped), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     private var topStackView = UIStackView()
+    private var navBAr = NavigationViewController()
     
     override init(frame: CGRect) {
             super.init(frame: frame)
@@ -47,7 +59,15 @@ class DataView: UIView {
     }
     
     @objc private func settingsButtonTapped() {
-        print("tapped")
+        
+    }
+    
+    @objc private func showLaunchesButtonTapped() {
+        
+        let launchVC = LaunchViewController()
+        navBAr.pushViewController(launchVC, animated: true)
+        
+        
     }
     
     private func setupViews() {
@@ -55,7 +75,9 @@ class DataView: UIView {
         topStackView = UIStackView(arrangedSubviews: [rocketNameLabel, settingsButton],
                                             axis: .horizontal,
                                             spacing: 10)
+        topStackView.distribution = .equalSpacing
                 addSubview(topStackView)
+        addSubview(showLaunchesButton)
     }
     
     private func setConstraints() {
@@ -65,6 +87,13 @@ class DataView: UIView {
             topStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
             topStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
             topStackView.heightAnchor.constraint(equalToConstant: 30)
+        ])
+        
+        NSLayoutConstraint.activate([
+            showLaunchesButton.topAnchor.constraint(equalTo: topStackView.topAnchor, constant: 50),
+            showLaunchesButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
+            showLaunchesButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
+            showLaunchesButton.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
 }

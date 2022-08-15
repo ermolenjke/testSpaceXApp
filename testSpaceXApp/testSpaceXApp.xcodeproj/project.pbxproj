@@ -20,6 +20,7 @@
 		3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18328A3C5DE00210ADE /* DataView.swift */; };
 		3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18728A3CA9000210ADE /* UIStackView + Extensions.swift */; };
 		3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */; };
+		3BB0BC0A28AA91CC000E7220 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB0BC0928AA91CC000E7220 /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3B53D18328A3C5DE00210ADE /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		3B53D18728A3CA9000210ADE /* UIStackView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extensions.swift"; sourceTree = "<group>"; };
 		3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		3BB0BC0928AA91CC000E7220 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				3B53D16D28A3B12F00210ADE /* MainViewController.swift */,
 				3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */,
 				3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */,
+				3BB0BC0928AA91CC000E7220 /* NavigationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B53D16E28A3B12F00210ADE /* MainViewController.swift in Sources */,
+				3BB0BC0A28AA91CC000E7220 /* NavigationViewController.swift in Sources */,
 				3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */,
 				3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */,
 				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
