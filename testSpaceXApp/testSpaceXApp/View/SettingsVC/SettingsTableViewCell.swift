@@ -9,7 +9,7 @@ import UIKit
 
 class SettingsTableViewCell: UITableViewCell {
    
-    private let rocketSettingsLabel = UILabel(text: "Полная нагрузка")
+    private let rocketSettingsLabel = UILabel(text: "Полезная нагрузка")
     
     private let rocketSettingsSegmentControl: UISegmentedControl = {
         let segmentControl = UISegmentedControl(items: ["m", "ft"])

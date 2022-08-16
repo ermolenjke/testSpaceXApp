@@ -24,17 +24,6 @@ class MainViewController: UIViewController {
         return imageView
     }()
     
-    private let qqq: UIButton = {
-        let button = UIButton(type: .system)
-        button.backgroundColor = Resources.Colors.specialGray
-        button.layer.cornerRadius = 10
-        button.setTitle("qqq qqq", for: .normal)
-        button.tintColor = .white
-        button.addTarget(self, action: #selector(qqqq), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-    
     private let dataView = DataView()
     
     override func viewDidLoad() {
@@ -43,11 +32,7 @@ class MainViewController: UIViewController {
         
         setupViews()
         setConstrains()
-    }
-    
-    @objc func qqqq() {
-        let set = SettingsViewController()
-        navigationController?.pushViewController(set, animated: true)
+        setDelegates()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,12 +45,19 @@ class MainViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
+    private func setDelegates() {
+        
+        dataView.showLaunchVCDelegate = self
+        dataView.showSettingsVCDelgate = self
+    }
+    
     private func setupViews() {
+        
+        
         
         view.addSubview(scrollView)
         scrollView.addSubview(rocketImageView)
         scrollView.addSubview(dataView)
-        scrollView.addSubview(qqq)
     }
     
     private func setConstrains() {
@@ -85,19 +77,32 @@ class MainViewController: UIViewController {
         ])
         
         NSLayoutConstraint.activate([
-            qqq.topAnchor.constraint(equalTo: dataView.topAnchor, constant: 200),
-            qqq.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-            qqq.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-            qqq.heightAnchor.constraint(equalToConstant: 100),
-        ])
-        
-            
-        NSLayoutConstraint.activate([
             dataView.topAnchor.constraint(equalTo: rocketImageView.bottomAnchor, constant: -60),
             dataView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             dataView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             dataView.heightAnchor.constraint(equalToConstant: 1000),
             dataView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 0)
         ])
+    }
+}
+
+extension MainViewController: ShowLaunchVCProtocol {
+    
+    func buttonTapped() {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Назад"
+        navigationItem.backBarButtonItem = backItem
+        
+        let launchVC = LaunchViewController()
+        navigationController?.pushViewController(launchVC, animated: true)
+    }
+}
+
+extension MainViewController: ShowSettingsVCProtocol {
+    
+    func settingsButtonTapped() {
+        
+        let setVC = SettingsViewController()
+        present(setVC, animated: true)
     }
 }

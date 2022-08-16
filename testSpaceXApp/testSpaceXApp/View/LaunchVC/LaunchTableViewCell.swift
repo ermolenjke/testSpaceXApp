@@ -57,7 +57,7 @@ class LaunchTableViewCell: UITableViewCell {
         }
     
     private func setupViews() {
-        
+            
             backgroundColor = .black
             selectionStyle = .none
         

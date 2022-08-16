@@ -11,7 +11,7 @@ class LaunchViewController: UIViewController {
     
     private let launchTableView: UITableView = {
         let tableView = UITableView()
-        tableView.backgroundColor = .yellow
+        tableView.backgroundColor = .none
         tableView.separatorStyle = .none
         tableView.bounces = false
         tableView.showsVerticalScrollIndicator = false
@@ -24,7 +24,7 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .purple
+        view.backgroundColor = .black
         
         setDelegates()
         setupViews()
@@ -39,13 +39,15 @@ class LaunchViewController: UIViewController {
     }
     
     private func setupViews() {
+
+        navigationController?.navigationBar.barTintColor = UIColor.black        
         
         view.addSubview(launchTableView)
     }
     private func setContrains() {
         
         NSLayoutConstraint.activate([
-            launchTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
+            launchTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
             launchTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             launchTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             launchTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)

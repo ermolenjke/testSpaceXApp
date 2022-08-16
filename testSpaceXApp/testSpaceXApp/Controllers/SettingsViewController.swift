@@ -22,7 +22,7 @@ class SettingsViewController: UIViewController {
     
     private let settingsTableView: UITableView = {
         let tableView = UITableView()
-        tableView.backgroundColor = .yellow
+        tableView.backgroundColor = Resources.Colors.specialGray
         tableView.separatorStyle = .none
         tableView.bounces = false
         tableView.showsVerticalScrollIndicator = false
@@ -36,7 +36,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .purple
+        view.backgroundColor = Resources.Colors.specialGray
         
         setDelegates()
         setupViews()
@@ -45,7 +45,7 @@ class SettingsViewController: UIViewController {
     }
     
     @objc private func closeVC() {
-        
+        dismiss(animated: true)
     }
     
     private func setDelegates() {
@@ -72,7 +72,7 @@ class SettingsViewController: UIViewController {
         ])
         
         NSLayoutConstraint.activate([
-            settingsTableView.topAnchor.constraint(equalTo: horizontalLabelsStack.bottomAnchor, constant: 80),
+            settingsTableView.topAnchor.constraint(equalTo: horizontalLabelsStack.bottomAnchor, constant: 60),
             settingsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             settingsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             settingsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)

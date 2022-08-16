@@ -7,28 +7,38 @@
 
 import UIKit
 
+protocol ShowLaunchVCProtocol: AnyObject {
+    
+    func buttonTapped()
+}
+
+protocol ShowSettingsVCProtocol: AnyObject {
+    
+    func settingsButtonTapped()
+}
+
 class DataView: UIView {
     
     
     private let settingsButton: UIButton = {
-            let button = UIButton(type: .system)
-            button.backgroundColor = .clear
-            button.setImage(UIImage(systemName: "gearshape"), for: .normal)
-            button.layer.cornerRadius = 20
-            button.tintColor = .white
-            button.addTarget(self, action: #selector(settingsButtonTapped), for: .touchUpInside)
+        let button = UIButton(type: .system)
+        button.backgroundColor = .clear
+        button.setImage(UIImage(systemName: "gearshape"), for: .normal)
+        button.layer.cornerRadius = 20
+        button.tintColor = .white
+        button.addTarget(self, action: #selector(settingsButtonTapped), for: .touchUpInside)
         button.showsTouchWhenHighlighted = true
-            button.translatesAutoresizingMaskIntoConstraints = false
-            return button
-        }()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
     let rocketNameLabel: UILabel = {
-           let label = UILabel()
-            label.text = "NAME"
-            label.textColor = .white
-            label.translatesAutoresizingMaskIntoConstraints = false
-            return label
-        }()
+        let label = UILabel()
+        label.text = "NAME"
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     
     private let showLaunchesButton: UIButton = {
         let button = UIButton(type: .system)
@@ -44,15 +54,18 @@ class DataView: UIView {
     private var topStackView = UIStackView()
     private var navBAr = NavigationViewController()
     
+    weak var showLaunchVCDelegate: ShowLaunchVCProtocol?
+    weak var showSettingsVCDelgate: ShowSettingsVCProtocol?
+    
     override init(frame: CGRect) {
-            super.init(frame: frame)
-            layer.cornerRadius = 20
-            backgroundColor = .black
-            translatesAutoresizingMaskIntoConstraints = false
-            
-            setupViews()
-            setConstraints()
-        }
+        super.init(frame: frame)
+        layer.cornerRadius = 20
+        backgroundColor = .black
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        setupViews()
+        setConstraints()
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -60,23 +73,21 @@ class DataView: UIView {
     
     @objc private func settingsButtonTapped() {
         
+        showSettingsVCDelgate?.settingsButtonTapped()
     }
     
     @objc private func showLaunchesButtonTapped() {
         
-        let launchVC = LaunchViewController()
-        navBAr.pushViewController(launchVC, animated: true)
-        
-        
+        showLaunchVCDelegate?.buttonTapped()
     }
     
     private func setupViews() {
         
         topStackView = UIStackView(arrangedSubviews: [rocketNameLabel, settingsButton],
-                                            axis: .horizontal,
-                                            spacing: 10)
+                                   axis: .horizontal,
+                                   spacing: 10)
         topStackView.distribution = .equalSpacing
-                addSubview(topStackView)
+        addSubview(topStackView)
         addSubview(showLaunchesButton)
     }
     
