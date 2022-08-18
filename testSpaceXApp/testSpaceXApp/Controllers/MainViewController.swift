@@ -1,89 +1,134 @@
 //
-//  ViewController.swift
+//  TestViewController.swift
 //  testSpaceXApp
 //
-//  Created by Даниил Ермоленко on 10.08.2022.
+//  Created by Даниил Ермоленко on 18.08.2022.
 //
 
 import UIKit
 
+struct RocketData {
+    
+    let nameLabel: String
+    let image: UIImage
+}
+
 class MainViewController: UIViewController {
-    
-    private let scrollView: UIScrollView = {
-        let scrollView = UIScrollView()
-        scrollView.bounces = false
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        return scrollView
+
+    private lazy var pageControl: UIPageControl = {
+       let pageControl = UIPageControl()
+        pageControl.numberOfPages = onboardingArray.count
+        pageControl.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        pageControl.backgroundColor = Resources.Colors.specialBackgroundGray
+        pageControl.addTarget(self, action: #selector(pageControlTapHandler(sender: )), for: .touchUpInside)
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        return pageControl
+    }()
+
+    let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0
+        layout.scrollDirection = .horizontal
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .red
+        collectionView.isPagingEnabled = true
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.bounces = false
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        return collectionView
     }()
     
-    private let rocketImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "falcon9")
-        imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        return imageView
-    }()
+    private let idOnboardingCell = "idOnboardingCell"
     
-    private let dataView = DataView()
+    private var onboardingArray = [RocketData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .orange
         
         setupViews()
-        setConstrains()
+        setConstraints()
         setDelegates()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+    @objc private func pageControlTapHandler(sender: UIPageControl) {
+        
+        collectionView.scrollToItem(at: IndexPath(row: sender.currentPage, section: 0), at: .centeredHorizontally, animated: true)
     }
+    
+    private func setupViews() {
+        view.backgroundColor = .green
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
+        view.addSubview(collectionView)
+        
+        
+        guard let imageFirst = UIImage(named: "falcon1"),
+        let imageSecond = UIImage(named: "falcon9"),
+        let imageThird = UIImage(named: "falconheavy"),
+        let imageFour = UIImage(named: "starship")                                                        else {
+            return
+        }
+        
+        let firstScreen = RocketData(nameLabel: "Falcon 1",
+                                          image: imageFirst)
+        let secondScreen = RocketData(nameLabel: "Falcon 9",
+                                            image: imageSecond)
+        let thirdScreen = RocketData(nameLabel: "Falcon Heavy",
+                                           image: imageThird)
+        let fourScreen = RocketData(nameLabel: "Starship",
+                                           image: imageFour)
+        
+        onboardingArray = [firstScreen, secondScreen, thirdScreen, fourScreen]
+        
+        view.addSubview(pageControl)
+        collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: idOnboardingCell)
     }
     
     private func setDelegates() {
         
-        dataView.showLaunchVCDelegate = self
-        dataView.showSettingsVCDelgate = self
+        collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
-    private func setupViews() {
-        
-        
-        
-        view.addSubview(scrollView)
-        scrollView.addSubview(rocketImageView)
-        scrollView.addSubview(dataView)
+}
+
+//MARK: - UICollectionViewDataSource
+
+extension MainViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        onboardingArray.count
     }
     
-    private func setConstrains() {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: idOnboardingCell, for: indexPath) as! MainCollectionViewCell
+        let model = onboardingArray[indexPath.row]
+        cell.cellConfigure(model: model)
         
-        NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
-        ])
-        
-        NSLayoutConstraint.activate([
-            rocketImageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 140),
-            rocketImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            rocketImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            rocketImageView.heightAnchor.constraint(equalToConstant: 300)
-        ])
-        
-        NSLayoutConstraint.activate([
-            dataView.topAnchor.constraint(equalTo: rocketImageView.bottomAnchor, constant: -60),
-            dataView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            dataView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            dataView.heightAnchor.constraint(equalToConstant: 1000),
-            dataView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 0)
-        ])
+        cell.dataView.showLaunchVCDelegate = self
+        cell.dataView.showSettingsVCDelgate = self
+        return cell
     }
+}
+
+//MARK: - UICollectionViewDelegateFlowLayout
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: view.frame.width, height: collectionView.frame.height)
+    }
+}
+//MARK: - UICollectionViewDelegate
+
+extension MainViewController: UICollectionViewDelegate {
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let visibleRect = CGRect(origin: self.collectionView.contentOffset, size: self.collectionView.bounds.size)
+        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+        if let visibleIndexPath = self.collectionView.indexPathForItem(at: visiblePoint) {
+            self.pageControl.currentPage = visibleIndexPath.row
+        }
+    }
+    
 }
 
 extension MainViewController: ShowLaunchVCProtocol {
@@ -104,5 +149,25 @@ extension MainViewController: ShowSettingsVCProtocol {
         
         let setVC = SettingsViewController()
         present(setVC, animated: true)
+    }
+}
+
+extension MainViewController {
+    
+    private func setConstraints() {
+        
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80)
+        ])
+        
+        NSLayoutConstraint.activate([
+            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            pageControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            pageControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            pageControl.heightAnchor.constraint(equalToConstant: 80)
+        ])
     }
 }
