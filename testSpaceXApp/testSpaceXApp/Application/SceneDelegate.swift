@@ -16,9 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
            
             guard let windowScene = (scene as? UIWindowScene) else { return }
             window = UIWindow(windowScene: windowScene)
-//            window?.rootViewController =  TestViewController()
-            let menuViewController = UINavigationController(rootViewController: MainViewController())
-            window?.rootViewController = menuViewController
+            window?.rootViewController =  MainViewController()
+//            let menuViewController = UINavigationController(rootViewController: MainViewController())
+//            window?.rootViewController = menuViewController
             window?.makeKeyAndVisible()
             window?.overrideUserInterfaceStyle = .light
         }

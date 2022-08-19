@@ -9,6 +9,17 @@ import UIKit
 
 class LaunchViewController: UIViewController {
     
+    private let settingsLabel = UILabel(text: "Настройки")
+    
+    private let closeButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Закрыть", for: .normal)
+        button.tintColor = .white
+        button.addTarget(self, action: #selector(closeVC), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     private let launchTableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .none
@@ -20,6 +31,7 @@ class LaunchViewController: UIViewController {
     }()
     
     private let idLaunchTableViewCell = "idLaunchTableViewCell"
+    private var horizontalLabelsStack = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +44,10 @@ class LaunchViewController: UIViewController {
         launchTableView.register(LaunchTableViewCell.self, forCellReuseIdentifier: idLaunchTableViewCell)
     }
     
+    @objc private func closeVC() {
+        dismiss(animated: true)
+    }
+    
     private func setDelegates() {
         
         launchTableView.delegate = self
@@ -39,15 +55,24 @@ class LaunchViewController: UIViewController {
     }
     
     private func setupViews() {
-
-        navigationController?.navigationBar.barTintColor = UIColor.black        
-        
+    
+        horizontalLabelsStack = UIStackView(arrangedSubviews: [settingsLabel, closeButton],
+                                            axis: .horizontal,
+                                            spacing: 10)
+        view.addSubview(horizontalLabelsStack)
         view.addSubview(launchTableView)
     }
     private func setContrains() {
         
         NSLayoutConstraint.activate([
-            launchTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            horizontalLabelsStack.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
+            horizontalLabelsStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 147),
+            horizontalLabelsStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
+            horizontalLabelsStack.heightAnchor.constraint(equalToConstant: 22)
+        ])
+        
+        NSLayoutConstraint.activate([
+            launchTableView.topAnchor.constraint(equalTo: horizontalLabelsStack.bottomAnchor, constant: 20),
             launchTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             launchTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             launchTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)

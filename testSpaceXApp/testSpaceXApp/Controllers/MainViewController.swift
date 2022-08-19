@@ -49,18 +49,25 @@ class MainViewController: UIViewController {
         setConstraints()
         setDelegates()
     }
-    
+
     @objc private func pageControlTapHandler(sender: UIPageControl) {
-        
+
         collectionView.scrollToItem(at: IndexPath(row: sender.currentPage, section: 0), at: .centeredHorizontally, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     private func setupViews() {
         view.backgroundColor = .green
 
-        view.addSubview(collectionView)
-        
-        
         guard let imageFirst = UIImage(named: "falcon1"),
         let imageSecond = UIImage(named: "falcon9"),
         let imageThird = UIImage(named: "falconheavy"),
@@ -79,6 +86,7 @@ class MainViewController: UIViewController {
         
         onboardingArray = [firstScreen, secondScreen, thirdScreen, fourScreen]
         
+        view.addSubview(collectionView)
         view.addSubview(pageControl)
         collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: idOnboardingCell)
     }
@@ -134,12 +142,9 @@ extension MainViewController: UICollectionViewDelegate {
 extension MainViewController: ShowLaunchVCProtocol {
     
     func buttonTapped() {
-        let backItem = UIBarButtonItem()
-        backItem.title = "Назад"
-        navigationItem.backBarButtonItem = backItem
         
         let launchVC = LaunchViewController()
-        navigationController?.pushViewController(launchVC, animated: true)
+        present(launchVC, animated: true)
     }
 }
 

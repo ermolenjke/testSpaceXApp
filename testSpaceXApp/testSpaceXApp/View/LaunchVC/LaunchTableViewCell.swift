@@ -75,7 +75,7 @@ class LaunchTableViewCell: UITableViewCell {
     private func setConstraints() {
         
         NSLayoutConstraint.activate([
-            backgroundCell.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+            backgroundCell.topAnchor.constraint(equalTo: topAnchor, constant: 15),
             backgroundCell.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             backgroundCell.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             backgroundCell.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5)
@@ -85,11 +85,11 @@ class LaunchTableViewCell: UITableViewCell {
             verticalDataLaunchStack.topAnchor.constraint(equalTo: backgroundCell.topAnchor, constant: 34),
             verticalDataLaunchStack.leadingAnchor.constraint(equalTo: backgroundCell.leadingAnchor, constant: 24),
             verticalDataLaunchStack.trailingAnchor.constraint(equalTo: backgroundCell.trailingAnchor, constant: -100),
-            verticalDataLaunchStack.bottomAnchor.constraint(equalTo: backgroundCell.bottomAnchor, constant: -38)
+            verticalDataLaunchStack.bottomAnchor.constraint(equalTo: backgroundCell.bottomAnchor, constant: -28)
         ])
         
         NSLayoutConstraint.activate([
-            statusLaunchImageView.topAnchor.constraint(equalTo: backgroundCell.topAnchor, constant: 40),
+            statusLaunchImageView.topAnchor.constraint(equalTo: backgroundCell.topAnchor, constant: 37),
             statusLaunchImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             statusLaunchImageView.heightAnchor.constraint(equalToConstant: 40),
             statusLaunchImageView.widthAnchor.constraint(equalToConstant: 46)
