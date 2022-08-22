@@ -27,9 +27,10 @@
 		3B74778728AE56070016E8EF /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778628AE56070016E8EF /* MainCollectionViewCell.swift */; };
 		3B74778B28AE78710016E8EF /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778A28AE78710016E8EF /* ActiveChatCell.swift */; };
 		3B74778D28AE78840016E8EF /* WatingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778C28AE78840016E8EF /* WatingChatCell.swift */; };
-		3B74779128AF81B80016E8EF /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778F28AF81B80016E8EF /* NetworkDataFetch.swift */; };
-		3B74779228AF81B80016E8EF /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74779028AF81B80016E8EF /* NetworkRequest.swift */; };
-		3B74779428AFA4770016E8EF /* LaunchNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74779328AFA4770016E8EF /* LaunchNetwork.swift */; };
+		3B74779228AF81B80016E8EF /* LaunchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74779028AF81B80016E8EF /* LaunchAPI.swift */; };
+		3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */; };
+		3B9FA32128B3AA1B00AC9927 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */; };
+		3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,9 +56,10 @@
 		3B74778628AE56070016E8EF /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B74778A28AE78710016E8EF /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		3B74778C28AE78840016E8EF /* WatingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatingChatCell.swift; sourceTree = "<group>"; };
-		3B74778F28AF81B80016E8EF /* NetworkDataFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDataFetch.swift; path = ../../../../../../Downloads/SecondCourse_9/FirstApp_Process/FirstApp_Process/Network/NetworkDataFetch.swift; sourceTree = "<group>"; };
-		3B74779028AF81B80016E8EF /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = ../../../../../../Downloads/SecondCourse_9/FirstApp_Process/FirstApp_Process/Network/NetworkRequest.swift; sourceTree = "<group>"; };
-		3B74779328AFA4770016E8EF /* LaunchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNetwork.swift; sourceTree = "<group>"; };
+		3B74779028AF81B80016E8EF /* LaunchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchAPI.swift; path = ../../../../../../Downloads/SecondCourse_9/FirstApp_Process/FirstApp_Process/Network/LaunchAPI.swift; sourceTree = "<group>"; };
+		3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNetwork.swift; sourceTree = "<group>"; };
+		3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDataFetch.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkDataFetch.swift"; sourceTree = "<group>"; };
+		3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkRequest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +192,7 @@
 			children = (
 				3B74778028AD318C0016E8EF /* MChat.swift */,
 				3B74778128AD318C0016E8EF /* MSection.swift */,
-				3B74779328AFA4770016E8EF /* LaunchNetwork.swift */,
+				3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,8 +210,9 @@
 		3B74778E28AF81960016E8EF /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3B74778F28AF81B80016E8EF /* NetworkDataFetch.swift */,
-				3B74779028AF81B80016E8EF /* NetworkRequest.swift */,
+				3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */,
+				3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */,
+				3B74779028AF81B80016E8EF /* LaunchAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -289,18 +292,19 @@
 				3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */,
 				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
+				3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */,
 				3B74778228AD318C0016E8EF /* MChat.swift in Sources */,
-				3B74779128AF81B80016E8EF /* NetworkDataFetch.swift in Sources */,
 				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
+				3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */,
 				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
 				3B74778328AD318C0016E8EF /* MSection.swift in Sources */,
 				3B74778728AE56070016E8EF /* MainCollectionViewCell.swift in Sources */,
 				3B0FF8DB28A646E100B45ED2 /* Resources.swift in Sources */,
-				3B74779228AF81B80016E8EF /* NetworkRequest.swift in Sources */,
+				3B74779228AF81B80016E8EF /* LaunchAPI.swift in Sources */,
 				3B74778D28AE78840016E8EF /* WatingChatCell.swift in Sources */,
-				3B74779428AFA4770016E8EF /* LaunchNetwork.swift in Sources */,
+				3B9FA32128B3AA1B00AC9927 /* NetworkDataFetch.swift in Sources */,
 				3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */,
 				3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */,
 				3B74778B28AE78710016E8EF /* ActiveChatCell.swift in Sources */,
@@ -437,8 +441,8 @@
 				INFOPLIST_FILE = testSpaceXApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,8 +469,8 @@
 				INFOPLIST_FILE = testSpaceXApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

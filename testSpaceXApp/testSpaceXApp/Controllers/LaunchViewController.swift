@@ -32,6 +32,8 @@ class LaunchViewController: UIViewController {
     
     private let idLaunchTableViewCell = "idLaunchTableViewCell"
     private var horizontalLabelsStack = UIStackView()
+    private let tableViewCell = LaunchTableViewCell()
+    private var launches = [LaunchNetwork]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,11 +44,18 @@ class LaunchViewController: UIViewController {
         setupViews()
         setContrains()
         launchTableView.register(LaunchTableViewCell.self, forCellReuseIdentifier: idLaunchTableViewCell)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        launchTableView.reloadData()
     }
     
     @objc private func closeVC() {
         dismiss(animated: true)
     }
+    
     
     private func setDelegates() {
         
@@ -84,11 +93,41 @@ class LaunchViewController: UIViewController {
 extension LaunchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return launches.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = launchTableView.dequeueReusableCell(withIdentifier: idLaunchTableViewCell, for: indexPath) as! LaunchTableViewCell
+     
+        NetworkDataFetch.shared.fetchLaunch { [weak self] model, error in
+            
+            guard let self = self else { return }
+            if error == nil {
+                guard let model = model else { return }
+                cell.launchNameLabel.text = model[indexPath.row].name
+                cell.dateLaunchLabel.text = model[indexPath.row].date_utc
+                
+                if model[indexPath.row].success == true {
+                    cell.statusLaunchImageView.tintColor = .green
+                } else {
+                    cell.statusLaunchImageView.tintColor = .red
+                }
+            } else {
+                print("fail")
+            }
+        }
+        
+        
+//        cell.launchNameLabel.text = launches[indexPath.row].name
+//        cell.dateLaunchLabel.text = launches[indexPath.row].date_utc
+//
+//        if launches[indexPath.row].success == true {
+//            cell.statusLaunchImageView.tintColor = .green
+//        } else {
+//            cell.statusLaunchImageView.tintColor = .red
+//        }
+        
+        
         return cell
     }
 }
@@ -97,5 +136,6 @@ extension LaunchViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130
+        }
     }
-}
+

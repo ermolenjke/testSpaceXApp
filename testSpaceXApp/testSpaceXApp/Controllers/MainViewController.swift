@@ -48,6 +48,10 @@ class MainViewController: UIViewController {
         setupViews()
         setConstraints()
         setDelegates()
+        
+        NetworkDataFetch.shared.fetchLaunch { model, error in
+            print(model)
+        }
     }
 
     @objc private func pageControlTapHandler(sender: UIPageControl) {
@@ -55,15 +59,15 @@ class MainViewController: UIViewController {
         collectionView.scrollToItem(at: IndexPath(row: sender.currentPage, section: 0), at: .centeredHorizontally, animated: true)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        navigationController?.setNavigationBarHidden(true, animated: animated)
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        navigationController?.setNavigationBarHidden(false, animated: animated)
+//    }
     
     private func setupViews() {
         view.backgroundColor = .green
