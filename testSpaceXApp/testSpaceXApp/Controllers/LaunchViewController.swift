@@ -32,7 +32,7 @@ class LaunchViewController: UIViewController {
     
     private let idLaunchTableViewCell = "idLaunchTableViewCell"
     private var horizontalLabelsStack = UIStackView()
-    private let tableViewCell = LaunchTableViewCell()
+    private let tableViewCell = LaunchTableViewCell() // ??
     private var launches = [LaunchNetwork]()
     
     override func viewDidLoad() {
@@ -43,6 +43,7 @@ class LaunchViewController: UIViewController {
         setDelegates()
         setupViews()
         setContrains()
+        getLaunch()
         launchTableView.register(LaunchTableViewCell.self, forCellReuseIdentifier: idLaunchTableViewCell)
         
     }
@@ -56,6 +57,15 @@ class LaunchViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    private func getLaunch() {
+        
+        NetworkDataFetch.shared.fetchLaunch {  model, error in
+            guard let launch = model else { return }
+            self.launches = launch
+            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print(self.launches)
+        }
+    }
     
     private func setDelegates() {
         
@@ -98,35 +108,16 @@ extension LaunchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = launchTableView.dequeueReusableCell(withIdentifier: idLaunchTableViewCell, for: indexPath) as! LaunchTableViewCell
-     
-        NetworkDataFetch.shared.fetchLaunch { [weak self] model, error in
-            
-            guard let self = self else { return }
-            if error == nil {
-                guard let model = model else { return }
-                cell.launchNameLabel.text = model[indexPath.row].name
-                cell.dateLaunchLabel.text = model[indexPath.row].date_utc
-                
-                if model[indexPath.row].success == true {
-                    cell.statusLaunchImageView.tintColor = .green
-                } else {
-                    cell.statusLaunchImageView.tintColor = .red
-                }
-            } else {
-                print("fail")
-            }
+        let launch = launches[indexPath.row]
+
+        cell.launchNameLabel.text = launch.name
+        cell.dateLaunchLabel.text = launch.date_utc
+
+        if launch.success == true {
+            cell.statusLaunchImageView.tintColor = .green
+        } else {
+            cell.statusLaunchImageView.tintColor = .red
         }
-        
-        
-//        cell.launchNameLabel.text = launches[indexPath.row].name
-//        cell.dateLaunchLabel.text = launches[indexPath.row].date_utc
-//
-//        if launches[indexPath.row].success == true {
-//            cell.statusLaunchImageView.tintColor = .green
-//        } else {
-//            cell.statusLaunchImageView.tintColor = .red
-//        }
-        
         
         return cell
     }
