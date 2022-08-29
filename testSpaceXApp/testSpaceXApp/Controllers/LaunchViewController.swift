@@ -32,8 +32,10 @@ class LaunchViewController: UIViewController {
     
     private let idLaunchTableViewCell = "idLaunchTableViewCell"
     private var horizontalLabelsStack = UIStackView()
-    private let tableViewCell = LaunchTableViewCell() // ??
     private var launches = [LaunchNetwork]()
+    private var falcon1Array = [LaunchNetwork]()
+    private var falcon9Array = [LaunchNetwork]()
+    private var falconHeavyArray = [LaunchNetwork]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,13 +45,12 @@ class LaunchViewController: UIViewController {
         setDelegates()
         setupViews()
         setContrains()
-        getLaunch()
         launchTableView.register(LaunchTableViewCell.self, forCellReuseIdentifier: idLaunchTableViewCell)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
+        getLaunch()
         launchTableView.reloadData()
     }
     
@@ -62,8 +63,9 @@ class LaunchViewController: UIViewController {
         NetworkDataFetch.shared.fetchLaunch {  model, error in
             guard let launch = model else { return }
             self.launches = launch
-            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             print(self.launches)
+            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            
         }
     }
     
@@ -74,7 +76,7 @@ class LaunchViewController: UIViewController {
     }
     
     private func setupViews() {
-    
+        
         horizontalLabelsStack = UIStackView(arrangedSubviews: [settingsLabel, closeButton],
                                             axis: .horizontal,
                                             spacing: 10)
@@ -108,17 +110,9 @@ extension LaunchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = launchTableView.dequeueReusableCell(withIdentifier: idLaunchTableViewCell, for: indexPath) as! LaunchTableViewCell
-        let launch = launches[indexPath.row]
-
-        cell.launchNameLabel.text = launch.name
-        cell.dateLaunchLabel.text = launch.date_utc
-
-        if launch.success == true {
-            cell.statusLaunchImageView.tintColor = .green
-        } else {
-            cell.statusLaunchImageView.tintColor = .red
-        }
+        let model = launches[indexPath.row]
         
+        cell.cellConfigure(model: model)
         return cell
     }
 }
@@ -127,6 +121,6 @@ extension LaunchViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130
-        }
     }
+}
 

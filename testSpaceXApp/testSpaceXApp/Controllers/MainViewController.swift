@@ -39,7 +39,6 @@ class MainViewController: UIViewController {
     }()
     
     private let idOnboardingCell = "idOnboardingCell"
-    
     private var onboardingArray = [RocketData]()
     
     override func viewDidLoad() {
@@ -48,26 +47,12 @@ class MainViewController: UIViewController {
         setupViews()
         setConstraints()
         setDelegates()
-        
-        NetworkDataFetch.shared.fetchLaunch { model, error in
-            print(model)
-        }
     }
 
     @objc private func pageControlTapHandler(sender: UIPageControl) {
 
         collectionView.scrollToItem(at: IndexPath(row: sender.currentPage, section: 0), at: .centeredHorizontally, animated: true)
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        navigationController?.setNavigationBarHidden(true, animated: animated)
-//    }
-//
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        navigationController?.setNavigationBarHidden(false, animated: animated)
-//    }
     
     private func setupViews() {
         view.backgroundColor = .green
@@ -113,6 +98,7 @@ extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: idOnboardingCell, for: indexPath) as! MainCollectionViewCell
+        
         let model = onboardingArray[indexPath.row]
         cell.cellConfigure(model: model)
         

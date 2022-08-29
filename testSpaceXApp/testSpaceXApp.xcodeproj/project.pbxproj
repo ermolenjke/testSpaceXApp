@@ -28,6 +28,7 @@
 		3B74778B28AE78710016E8EF /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778A28AE78710016E8EF /* ActiveChatCell.swift */; };
 		3B74778D28AE78840016E8EF /* WatingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778C28AE78840016E8EF /* WatingChatCell.swift */; };
 		3B74779228AF81B80016E8EF /* LaunchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74779028AF81B80016E8EF /* LaunchAPI.swift */; };
+		3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */; };
 		3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */; };
 		3B9FA32128B3AA1B00AC9927 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */; };
 		3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */; };
@@ -57,6 +58,7 @@
 		3B74778A28AE78710016E8EF /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		3B74778C28AE78840016E8EF /* WatingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatingChatCell.swift; sourceTree = "<group>"; };
 		3B74779028AF81B80016E8EF /* LaunchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchAPI.swift; path = ../../../../../../Downloads/SecondCourse_9/FirstApp_Process/FirstApp_Process/Network/LaunchAPI.swift; sourceTree = "<group>"; };
+		3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 		3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNetwork.swift; sourceTree = "<group>"; };
 		3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDataFetch.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkDataFetch.swift"; sourceTree = "<group>"; };
 		3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkRequest.swift"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		3B53D18528A3CA5700210ADE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */,
 				3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */,
 				3B53D18628A3CA6A00210ADE /* UIKit */,
 			);
@@ -296,6 +299,7 @@
 				3B74778228AD318C0016E8EF /* MChat.swift in Sources */,
 				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
 				3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */,
+				3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */,
 				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,

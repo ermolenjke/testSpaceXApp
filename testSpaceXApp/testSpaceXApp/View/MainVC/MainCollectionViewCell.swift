@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 class MainCollectionViewCell: UICollectionViewCell {
     
     private let scrollView: UIScrollView = {
