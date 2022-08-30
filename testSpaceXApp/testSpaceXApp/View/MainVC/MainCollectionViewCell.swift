@@ -70,7 +70,7 @@ class MainCollectionViewCell: UICollectionViewCell {
             dataView.topAnchor.constraint(equalTo: rocketImageView.bottomAnchor, constant: -70),
             dataView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             dataView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-            dataView.heightAnchor.constraint(equalToConstant: 1500),
+            dataView.heightAnchor.constraint(equalToConstant: 870),
             dataView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: 0)
         ])
         

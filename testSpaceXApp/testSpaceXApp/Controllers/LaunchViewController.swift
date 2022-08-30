@@ -60,11 +60,20 @@ class LaunchViewController: UIViewController {
     
     private func getLaunch() {
         
-        NetworkDataFetch.shared.fetchLaunch {  model, error in
+        NetworkDataFetch.shared.fetchLaunch { model, error in
             guard let launch = model else { return }
             self.launches = launch
             print(self.launches)
             print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            
+//            for launch in self.launches {
+//
+//                if launch.rocket.rawValue == "5e9d0d95eda69955f709d1eb" {
+//                    self.falcon1Array.append(launch)
+//                    print(self.falcon1Array)
+//                }
+//
+//            }
             
         }
     }

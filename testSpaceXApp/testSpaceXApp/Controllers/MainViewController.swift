@@ -38,6 +38,8 @@ class MainViewController: UIViewController {
         return collectionView
     }()
     
+    
+    
     private let idOnboardingCell = "idOnboardingCell"
     private var onboardingArray = [RocketData]()
     

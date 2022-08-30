@@ -21,17 +21,14 @@
 		3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */; };
 		3B74777C28AD30560016E8EF /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B74777B28AD30560016E8EF /* model.json */; };
 		3B74777E28AD30A00016E8EF /* Bundle + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */; };
-		3B74778228AD318C0016E8EF /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778028AD318C0016E8EF /* MChat.swift */; };
-		3B74778328AD318C0016E8EF /* MSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778128AD318C0016E8EF /* MSection.swift */; };
 		3B74778528AE4BE30016E8EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778428AE4BE30016E8EF /* MainViewController.swift */; };
 		3B74778728AE56070016E8EF /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778628AE56070016E8EF /* MainCollectionViewCell.swift */; };
-		3B74778B28AE78710016E8EF /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778A28AE78710016E8EF /* ActiveChatCell.swift */; };
-		3B74778D28AE78840016E8EF /* WatingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778C28AE78840016E8EF /* WatingChatCell.swift */; };
-		3B74779228AF81B80016E8EF /* LaunchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74779028AF81B80016E8EF /* LaunchAPI.swift */; };
 		3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */; };
 		3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */; };
 		3B9FA32128B3AA1B00AC9927 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */; };
 		3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */; };
+		3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */; };
+		3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438828BE6619000161B0 /* DataTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,17 +48,14 @@
 		3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		3B74777B28AD30560016E8EF /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = model.json; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/model.json"; sourceTree = "<group>"; };
 		3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bundle + Extension.swift"; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/Extensions/Bundle + Extension.swift"; sourceTree = "<group>"; };
-		3B74778028AD318C0016E8EF /* MChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MChat.swift; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/Models/MChat.swift"; sourceTree = "<group>"; };
-		3B74778128AD318C0016E8EF /* MSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSection.swift; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/Models/MSection.swift"; sourceTree = "<group>"; };
 		3B74778428AE4BE30016E8EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3B74778628AE56070016E8EF /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
-		3B74778A28AE78710016E8EF /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
-		3B74778C28AE78840016E8EF /* WatingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatingChatCell.swift; sourceTree = "<group>"; };
-		3B74779028AF81B80016E8EF /* LaunchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchAPI.swift; path = ../../../../../../Downloads/SecondCourse_9/FirstApp_Process/FirstApp_Process/Network/LaunchAPI.swift; sourceTree = "<group>"; };
 		3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 		3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNetwork.swift; sourceTree = "<group>"; };
 		3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDataFetch.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkDataFetch.swift"; sourceTree = "<group>"; };
 		3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkRequest.swift"; sourceTree = "<group>"; };
+		3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BC3438828BE6619000161B0 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,8 +187,6 @@
 		3B74777F28AD317A0016E8EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3B74778028AD318C0016E8EF /* MChat.swift */,
-				3B74778128AD318C0016E8EF /* MSection.swift */,
 				3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */,
 			);
 			path = Model;
@@ -204,8 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				3B53D18328A3C5DE00210ADE /* DataView.swift */,
-				3B74778A28AE78710016E8EF /* ActiveChatCell.swift */,
-				3B74778C28AE78840016E8EF /* WatingChatCell.swift */,
+				3BC3438528BE49AF000161B0 /* DataViewCell */,
 			);
 			path = DataView;
 			sourceTree = "<group>";
@@ -215,9 +206,17 @@
 			children = (
 				3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */,
 				3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */,
-				3B74779028AF81B80016E8EF /* LaunchAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		3BC3438528BE49AF000161B0 /* DataViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */,
+				3BC3438828BE6619000161B0 /* DataTableViewCell.swift */,
+			);
+			path = DataViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,24 +293,21 @@
 				3B74778528AE4BE30016E8EF /* MainViewController.swift in Sources */,
 				3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */,
 				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
+				3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
 				3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */,
-				3B74778228AD318C0016E8EF /* MChat.swift in Sources */,
+				3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */,
 				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
 				3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */,
 				3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */,
 				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
-				3B74778328AD318C0016E8EF /* MSection.swift in Sources */,
 				3B74778728AE56070016E8EF /* MainCollectionViewCell.swift in Sources */,
 				3B0FF8DB28A646E100B45ED2 /* Resources.swift in Sources */,
-				3B74779228AF81B80016E8EF /* LaunchAPI.swift in Sources */,
-				3B74778D28AE78840016E8EF /* WatingChatCell.swift in Sources */,
 				3B9FA32128B3AA1B00AC9927 /* NetworkDataFetch.swift in Sources */,
 				3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */,
 				3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */,
-				3B74778B28AE78710016E8EF /* ActiveChatCell.swift in Sources */,
 				3B74777E28AD30A00016E8EF /* Bundle + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
