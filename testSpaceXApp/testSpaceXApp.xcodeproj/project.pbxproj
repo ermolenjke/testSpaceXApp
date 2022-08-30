@@ -29,6 +29,7 @@
 		3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */; };
 		3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */; };
 		3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438828BE6619000161B0 /* DataTableViewCell.swift */; };
+		3BC3438B28BE6EA7000161B0 /* RocketNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438A28BE6EA7000161B0 /* RocketNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkRequest.swift"; sourceTree = "<group>"; };
 		3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BC3438828BE6619000161B0 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		3BC3438A28BE6EA7000161B0 /* RocketNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */,
+				3BC3438A28BE6EA7000161B0 /* RocketNetwork.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
 				3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */,
+				3BC3438B28BE6EA7000161B0 /* RocketNetwork.swift in Sources */,
 				3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */,
 				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
 				3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */,

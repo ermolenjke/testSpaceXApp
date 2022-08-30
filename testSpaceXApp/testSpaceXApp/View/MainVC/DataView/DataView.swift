@@ -69,6 +69,7 @@ class DataView: UIView {
         tableView.separatorStyle = .none
         tableView.bounces = false
         tableView.showsVerticalScrollIndicator = false
+//        tableView.isPagingEnabled = true
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -156,7 +157,7 @@ class DataView: UIView {
             showLaunchesButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             showLaunchesButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             showLaunchesButton.heightAnchor.constraint(equalToConstant: 60),
-            showLaunchesButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30)
+            showLaunchesButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40)
         ])
         
         
