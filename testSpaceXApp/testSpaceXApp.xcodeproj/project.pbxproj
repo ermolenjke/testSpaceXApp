@@ -27,6 +27,22 @@
 		3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */; };
 		3B9FA32128B3AA1B00AC9927 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */; };
 		3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */; };
+		3BA5279C28C527FE001C9DD6 /* Launches.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278A28C527FE001C9DD6 /* Launches.JSON */; };
+		3BA5279D28C527FE001C9DD6 /* Rockets.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278B28C527FE001C9DD6 /* Rockets.JSON */; };
+		3BA5279E28C527FE001C9DD6 /* FontNames in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278D28C527FE001C9DD6 /* FontNames */; };
+		3BA5279F28C527FE001C9DD6 /* LabGrotesque-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278E28C527FE001C9DD6 /* LabGrotesque-Thin.ttf */; };
+		3BA527A028C527FE001C9DD6 /* LabGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278F28C527FE001C9DD6 /* LabGrotesque-Regular.ttf */; };
+		3BA527A128C527FE001C9DD6 /* LabGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5279028C527FE001C9DD6 /* LabGrotesque-Bold.ttf */; };
+		3BA527A228C527FE001C9DD6 /* LabGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5279128C527FE001C9DD6 /* LabGrotesque-Medium.ttf */; };
+		3BA527A328C527FE001C9DD6 /* ObserverConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279328C527FE001C9DD6 /* ObserverConstants.swift */; };
+		3BA527A428C527FE001C9DD6 /* UIImage + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279428C527FE001C9DD6 /* UIImage + extension.swift */; };
+		3BA527A528C527FE001C9DD6 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279528C527FE001C9DD6 /* Sizes.swift */; };
+		3BA527A628C527FE001C9DD6 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279628C527FE001C9DD6 /* APIs.swift */; };
+		3BA527A728C527FE001C9DD6 /* UIViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279728C527FE001C9DD6 /* UIViewController + extension.swift */; };
+		3BA527A828C527FE001C9DD6 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279828C527FE001C9DD6 /* TextFormatter.swift */; };
+		3BA527A928C527FE001C9DD6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279928C527FE001C9DD6 /* Fonts.swift */; };
+		3BA527AA28C527FE001C9DD6 /* UIScrollView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279A28C527FE001C9DD6 /* UIScrollView + extension.swift */; };
+		3BA527AB28C527FE001C9DD6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279B28C527FE001C9DD6 /* Colors.swift */; };
 		3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */; };
 		3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438828BE6619000161B0 /* DataTableViewCell.swift */; };
 		3BC3438B28BE6EA7000161B0 /* RocketNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438A28BE6EA7000161B0 /* RocketNetwork.swift */; };
@@ -55,6 +71,38 @@
 		3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNetwork.swift; sourceTree = "<group>"; };
 		3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDataFetch.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkDataFetch.swift"; sourceTree = "<group>"; };
 		3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkRequest.swift"; sourceTree = "<group>"; };
+		3BA5278A28C527FE001C9DD6 /* Launches.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Launches.JSON; sourceTree = "<group>"; };
+		3BA5278B28C527FE001C9DD6 /* Rockets.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rockets.JSON; sourceTree = "<group>"; };
+		3BA5278D28C527FE001C9DD6 /* FontNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FontNames; sourceTree = "<group>"; };
+		3BA5278E28C527FE001C9DD6 /* LabGrotesque-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Thin.ttf"; sourceTree = "<group>"; };
+		3BA5278F28C527FE001C9DD6 /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
+		3BA5279028C527FE001C9DD6 /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
+		3BA5279128C527FE001C9DD6 /* LabGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Medium.ttf"; sourceTree = "<group>"; };
+		3BA5279328C527FE001C9DD6 /* ObserverConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverConstants.swift; sourceTree = "<group>"; };
+		3BA5279428C527FE001C9DD6 /* UIImage + extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + extension.swift"; sourceTree = "<group>"; };
+		3BA5279528C527FE001C9DD6 /* Sizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		3BA5279628C527FE001C9DD6 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		3BA5279728C527FE001C9DD6 /* UIViewController + extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
+		3BA5279828C527FE001C9DD6 /* TextFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		3BA5279928C527FE001C9DD6 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3BA5279A28C527FE001C9DD6 /* UIScrollView + extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView + extension.swift"; sourceTree = "<group>"; };
+		3BA5279B28C527FE001C9DD6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3BA527AE28C52804001C9DD6 /* Launches.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Launches.JSON; sourceTree = "<group>"; };
+		3BA527AF28C52804001C9DD6 /* Rockets.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rockets.JSON; sourceTree = "<group>"; };
+		3BA527B128C52805001C9DD6 /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
+		3BA527B228C52805001C9DD6 /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
+		3BA527B328C52805001C9DD6 /* FontNames */ = {isa = PBXFileReference; lastKnownFileType = text; path = FontNames; sourceTree = "<group>"; };
+		3BA527B428C52806001C9DD6 /* LabGrotesque-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Thin.ttf"; sourceTree = "<group>"; };
+		3BA527B528C52806001C9DD6 /* LabGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Medium.ttf"; sourceTree = "<group>"; };
+		3BA527B728C52806001C9DD6 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		3BA527B828C52806001C9DD6 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		3BA527B928C52806001C9DD6 /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
+		3BA527BA28C52807001C9DD6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3BA527BB28C52807001C9DD6 /* UIImage + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + extension.swift"; sourceTree = "<group>"; };
+		3BA527BC28C52807001C9DD6 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		3BA527BD28C52807001C9DD6 /* UIScrollView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView + extension.swift"; sourceTree = "<group>"; };
+		3BA527BE28C52808001C9DD6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3BA527BF28C52808001C9DD6 /* ObserverConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConstants.swift; sourceTree = "<group>"; };
 		3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BC3438828BE6619000161B0 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		3BC3438A28BE6EA7000161B0 /* RocketNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketNetwork.swift; sourceTree = "<group>"; };
@@ -112,6 +160,7 @@
 				3B53D17D28A3B76B00210ADE /* Application */,
 				3B53D18028A3B7AF00210ADE /* View */,
 				3B53D18128A3B7B700210ADE /* Resources */,
+				3BA527AC28C52804001C9DD6 /* Supporting Files */,
 				3B53D17F28A3B7A600210ADE /* Controllers */,
 			);
 			path = testSpaceXApp;
@@ -129,6 +178,7 @@
 		3B53D17F28A3B7A600210ADE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3BA5278828C527FE001C9DD6 /* Supporting Files */,
 				3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */,
 				3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */,
 				3B74778428AE4BE30016E8EF /* MainViewController.swift */,
@@ -213,6 +263,101 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		3BA5278828C527FE001C9DD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5278928C527FE001C9DD6 /* JSONs */,
+				3BA5278C28C527FE001C9DD6 /* Fonts */,
+				3BA5279228C527FE001C9DD6 /* Helpers */,
+			);
+			name = "Supporting Files";
+			path = "../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BA5278928C527FE001C9DD6 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5278A28C527FE001C9DD6 /* Launches.JSON */,
+				3BA5278B28C527FE001C9DD6 /* Rockets.JSON */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
+		3BA5278C28C527FE001C9DD6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5278D28C527FE001C9DD6 /* FontNames */,
+				3BA5278E28C527FE001C9DD6 /* LabGrotesque-Thin.ttf */,
+				3BA5278F28C527FE001C9DD6 /* LabGrotesque-Regular.ttf */,
+				3BA5279028C527FE001C9DD6 /* LabGrotesque-Bold.ttf */,
+				3BA5279128C527FE001C9DD6 /* LabGrotesque-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3BA5279228C527FE001C9DD6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5279328C527FE001C9DD6 /* ObserverConstants.swift */,
+				3BA5279428C527FE001C9DD6 /* UIImage + extension.swift */,
+				3BA5279528C527FE001C9DD6 /* Sizes.swift */,
+				3BA5279628C527FE001C9DD6 /* APIs.swift */,
+				3BA5279728C527FE001C9DD6 /* UIViewController + extension.swift */,
+				3BA5279828C527FE001C9DD6 /* TextFormatter.swift */,
+				3BA5279928C527FE001C9DD6 /* Fonts.swift */,
+				3BA5279A28C527FE001C9DD6 /* UIScrollView + extension.swift */,
+				3BA5279B28C527FE001C9DD6 /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3BA527AC28C52804001C9DD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BA527AD28C52804001C9DD6 /* JSONs */,
+				3BA527B028C52805001C9DD6 /* Fonts */,
+				3BA527B628C52806001C9DD6 /* Helpers */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BA527AD28C52804001C9DD6 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				3BA527AE28C52804001C9DD6 /* Launches.JSON */,
+				3BA527AF28C52804001C9DD6 /* Rockets.JSON */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
+		3BA527B028C52805001C9DD6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3BA527B328C52805001C9DD6 /* FontNames */,
+				3BA527B428C52806001C9DD6 /* LabGrotesque-Thin.ttf */,
+				3BA527B128C52805001C9DD6 /* LabGrotesque-Regular.ttf */,
+				3BA527B228C52805001C9DD6 /* LabGrotesque-Bold.ttf */,
+				3BA527B528C52806001C9DD6 /* LabGrotesque-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3BA527B628C52806001C9DD6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3BA527BF28C52808001C9DD6 /* ObserverConstants.swift */,
+				3BA527BB28C52807001C9DD6 /* UIImage + extension.swift */,
+				3BA527B828C52806001C9DD6 /* Sizes.swift */,
+				3BA527BC28C52807001C9DD6 /* APIs.swift */,
+				3BA527B928C52806001C9DD6 /* UIViewController + extension.swift */,
+				3BA527B728C52806001C9DD6 /* TextFormatter.swift */,
+				3BA527BE28C52808001C9DD6 /* Fonts.swift */,
+				3BA527BD28C52807001C9DD6 /* UIScrollView + extension.swift */,
+				3BA527BA28C52807001C9DD6 /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		3BC3438528BE49AF000161B0 /* DataViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,8 +425,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA5279C28C527FE001C9DD6 /* Launches.JSON in Resources */,
 				3B53D17328A3B13200210ADE /* Assets.xcassets in Resources */,
+				3BA5279E28C527FE001C9DD6 /* FontNames in Resources */,
+				3BA5279F28C527FE001C9DD6 /* LabGrotesque-Thin.ttf in Resources */,
 				3B74777C28AD30560016E8EF /* model.json in Resources */,
+				3BA527A128C527FE001C9DD6 /* LabGrotesque-Bold.ttf in Resources */,
+				3BA527A228C527FE001C9DD6 /* LabGrotesque-Medium.ttf in Resources */,
+				3BA5279D28C527FE001C9DD6 /* Rockets.JSON in Resources */,
+				3BA527A028C527FE001C9DD6 /* LabGrotesque-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,19 +444,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA527A928C527FE001C9DD6 /* Fonts.swift in Sources */,
+				3BA527AB28C527FE001C9DD6 /* Colors.swift in Sources */,
 				3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */,
 				3B74778528AE4BE30016E8EF /* MainViewController.swift in Sources */,
 				3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */,
 				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
 				3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
+				3BA527A828C527FE001C9DD6 /* TextFormatter.swift in Sources */,
 				3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */,
 				3BC3438B28BE6EA7000161B0 /* RocketNetwork.swift in Sources */,
+				3BA527AA28C527FE001C9DD6 /* UIScrollView + extension.swift in Sources */,
+				3BA527A628C527FE001C9DD6 /* APIs.swift in Sources */,
 				3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */,
+				3BA527A728C527FE001C9DD6 /* UIViewController + extension.swift in Sources */,
 				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
 				3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */,
 				3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */,
+				3BA527A528C527FE001C9DD6 /* Sizes.swift in Sources */,
 				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
+				3BA527A428C527FE001C9DD6 /* UIImage + extension.swift in Sources */,
+				3BA527A328C527FE001C9DD6 /* ObserverConstants.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
 				3B74778728AE56070016E8EF /* MainCollectionViewCell.swift in Sources */,
