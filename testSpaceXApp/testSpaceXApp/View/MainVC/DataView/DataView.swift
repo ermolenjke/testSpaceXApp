@@ -59,6 +59,7 @@ class DataView: UIView {
         collectionView.backgroundColor = .none
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.bounces = false
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
@@ -80,6 +81,12 @@ class DataView: UIView {
     
     weak var showLaunchVCDelegate: ShowLaunchVCProtocol?
     weak var showSettingsVCDelgate: ShowSettingsVCProtocol?
+
+    var rocket: RocketViewModel? {
+        didSet {
+            updateValues()
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -92,6 +99,10 @@ class DataView: UIView {
         setConstraints()
         dataCollectionView.register(DataCollectionViewCell.self, forCellWithReuseIdentifier: withReuseIdentifier)
         dataTableView.register(DataTableViewCell.self, forCellReuseIdentifier: withIdentifier)
+    }
+    
+    func updateValues() {
+        
     }
     
     private func setDelagate() {
@@ -117,6 +128,10 @@ class DataView: UIView {
         showLaunchVCDelegate?.buttonTapped()
     }
     
+    @objc func updateView() {
+        
+    }
+    
     private func setupViews() {
         
         topStackView = UIStackView(arrangedSubviews: [rocketNameLabel, settingsButton],
@@ -140,8 +155,8 @@ class DataView: UIView {
         
         NSLayoutConstraint.activate([
             dataCollectionView.topAnchor.constraint(equalTo: topStackView.bottomAnchor, constant: 20),
-            dataCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            dataCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            dataCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+            dataCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
             dataCollectionView.heightAnchor.constraint(equalToConstant: 110)
         ])
         

@@ -32,10 +32,7 @@ class LaunchViewController: UIViewController {
     
     private let idLaunchTableViewCell = "idLaunchTableViewCell"
     private var horizontalLabelsStack = UIStackView()
-    private var launches = [LaunchNetwork]()
-    private var falcon1Array = [LaunchNetwork]()
-    private var falcon9Array = [LaunchNetwork]()
-    private var falconHeavyArray = [LaunchNetwork]()
+    var rocket = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,22 +57,22 @@ class LaunchViewController: UIViewController {
     
     private func getLaunch() {
         
-        NetworkDataFetch.shared.fetchLaunch { model, error in
-            guard let launch = model else { return }
-            self.launches = launch
-            print(self.launches)
-            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-            
-//            for launch in self.launches {
+//        NetworkDataFetch.shared.fetchLaunch { model, error in
+//            guard let launch = model else { return }
+//            self.launches = launch
+//            print(self.launches)
+//            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 //
-//                if launch.rocket.rawValue == "5e9d0d95eda69955f709d1eb" {
-//                    self.falcon1Array.append(launch)
-//                    print(self.falcon1Array)
-//                }
+////            for launch in self.launches {
+////
+////                if launch.rocket.rawValue == "5e9d0d95eda69955f709d1eb" {
+////                    self.falcon1Array.append(launch)
+////                    print(self.falcon1Array)
+////                }
+////
+////            }
 //
-//            }
-            
-        }
+//        }
     }
     
     private func setDelegates() {
@@ -114,14 +111,15 @@ class LaunchViewController: UIViewController {
 extension LaunchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return launches.count
+//        return launches.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = launchTableView.dequeueReusableCell(withIdentifier: idLaunchTableViewCell, for: indexPath) as! LaunchTableViewCell
-        let model = launches[indexPath.row]
+//        let model = launches[indexPath.row]
         
-        cell.cellConfigure(model: model)
+//        cell.cellConfigure(model: model)
         return cell
     }
 }

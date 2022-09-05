@@ -56,16 +56,16 @@ class LaunchTableViewCell: UITableViewCell {
             fatalError("init(coder:) has not been implemented")
         }
     
-    func cellConfigure(model: LaunchNetwork) {
-        launchNameLabel.text = model.name
-        dateLaunchLabel.text = model.date
-        
-        if model.success == true {
-            statusLaunchImageView.tintColor = .green
-        } else {
-            statusLaunchImageView.tintColor = .red
-        }
-    }
+//    func cellConfigure(model: LaunchNetwork) {
+//        launchNameLabel.text = model.name
+//        dateLaunchLabel.text = model.date
+//        
+//        if model.success == true {
+//            statusLaunchImageView.tintColor = .green
+//        } else {
+//            statusLaunchImageView.tintColor = .red
+//        }
+//    }
     
     private func setupViews() {
             

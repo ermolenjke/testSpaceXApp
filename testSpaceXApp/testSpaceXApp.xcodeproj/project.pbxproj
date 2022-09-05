@@ -21,31 +21,19 @@
 		3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */; };
 		3B74777C28AD30560016E8EF /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B74777B28AD30560016E8EF /* model.json */; };
 		3B74777E28AD30A00016E8EF /* Bundle + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */; };
-		3B74778528AE4BE30016E8EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778428AE4BE30016E8EF /* MainViewController.swift */; };
-		3B74778728AE56070016E8EF /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778628AE56070016E8EF /* MainCollectionViewCell.swift */; };
+		3B74778728AE56070016E8EF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778628AE56070016E8EF /* MainVC.swift */; };
 		3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */; };
-		3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */; };
-		3B9FA32128B3AA1B00AC9927 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */; };
-		3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */; };
-		3BA5279C28C527FE001C9DD6 /* Launches.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278A28C527FE001C9DD6 /* Launches.JSON */; };
-		3BA5279D28C527FE001C9DD6 /* Rockets.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278B28C527FE001C9DD6 /* Rockets.JSON */; };
-		3BA5279E28C527FE001C9DD6 /* FontNames in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278D28C527FE001C9DD6 /* FontNames */; };
-		3BA5279F28C527FE001C9DD6 /* LabGrotesque-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278E28C527FE001C9DD6 /* LabGrotesque-Thin.ttf */; };
-		3BA527A028C527FE001C9DD6 /* LabGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5278F28C527FE001C9DD6 /* LabGrotesque-Regular.ttf */; };
-		3BA527A128C527FE001C9DD6 /* LabGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5279028C527FE001C9DD6 /* LabGrotesque-Bold.ttf */; };
-		3BA527A228C527FE001C9DD6 /* LabGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5279128C527FE001C9DD6 /* LabGrotesque-Medium.ttf */; };
-		3BA527A328C527FE001C9DD6 /* ObserverConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279328C527FE001C9DD6 /* ObserverConstants.swift */; };
-		3BA527A428C527FE001C9DD6 /* UIImage + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279428C527FE001C9DD6 /* UIImage + extension.swift */; };
-		3BA527A528C527FE001C9DD6 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279528C527FE001C9DD6 /* Sizes.swift */; };
-		3BA527A628C527FE001C9DD6 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279628C527FE001C9DD6 /* APIs.swift */; };
-		3BA527A728C527FE001C9DD6 /* UIViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279728C527FE001C9DD6 /* UIViewController + extension.swift */; };
-		3BA527A828C527FE001C9DD6 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279828C527FE001C9DD6 /* TextFormatter.swift */; };
-		3BA527A928C527FE001C9DD6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279928C527FE001C9DD6 /* Fonts.swift */; };
-		3BA527AA28C527FE001C9DD6 /* UIScrollView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279A28C527FE001C9DD6 /* UIScrollView + extension.swift */; };
-		3BA527AB28C527FE001C9DD6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5279B28C527FE001C9DD6 /* Colors.swift */; };
+		3B9FA31E28B3A24100AC9927 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31D28B3A24100AC9927 /* Launch.swift */; };
+		3B9FA32228B3AA1B00AC9927 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA32028B3AA1B00AC9927 /* NetworkManager.swift */; };
+		3BA527FA28C64A15001C9DD6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA527F928C64A15001C9DD6 /* PageViewController.swift */; };
+		3BA5280728C655DD001C9DD6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5280628C655DD001C9DD6 /* API.swift */; };
+		3BA5280928C65C8A001C9DD6 /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5280828C65C8A001C9DD6 /* RocketViewModel.swift */; };
+		3BA5280B28C65D23001C9DD6 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5280A28C65D23001C9DD6 /* Enums.swift */; };
+		3BA5280D28C65D6D001C9DD6 /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5280C28C65D6D001C9DD6 /* Ext.swift */; };
+		3BA5280F28C66A45001C9DD6 /* RocketsPackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5280E28C66A45001C9DD6 /* RocketsPackViewModel.swift */; };
 		3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */; };
 		3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438828BE6619000161B0 /* DataTableViewCell.swift */; };
-		3BC3438B28BE6EA7000161B0 /* RocketNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438A28BE6EA7000161B0 /* RocketNetwork.swift */; };
+		3BC3438B28BE6EA7000161B0 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438A28BE6EA7000161B0 /* Rocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,95 +53,19 @@
 		3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		3B74777B28AD30560016E8EF /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = model.json; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/model.json"; sourceTree = "<group>"; };
 		3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bundle + Extension.swift"; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/Extensions/Bundle + Extension.swift"; sourceTree = "<group>"; };
-		3B74778428AE4BE30016E8EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		3B74778628AE56070016E8EF /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B74778628AE56070016E8EF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
-		3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNetwork.swift; sourceTree = "<group>"; };
-		3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkDataFetch.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkDataFetch.swift"; sourceTree = "<group>"; };
-		3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkRequest.swift"; sourceTree = "<group>"; };
-		3BA5278A28C527FE001C9DD6 /* Launches.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Launches.JSON; sourceTree = "<group>"; };
-		3BA5278B28C527FE001C9DD6 /* Rockets.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rockets.JSON; sourceTree = "<group>"; };
-		3BA5278D28C527FE001C9DD6 /* FontNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FontNames; sourceTree = "<group>"; };
-		3BA5278E28C527FE001C9DD6 /* LabGrotesque-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Thin.ttf"; sourceTree = "<group>"; };
-		3BA5278F28C527FE001C9DD6 /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
-		3BA5279028C527FE001C9DD6 /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
-		3BA5279128C527FE001C9DD6 /* LabGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Medium.ttf"; sourceTree = "<group>"; };
-		3BA5279328C527FE001C9DD6 /* ObserverConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverConstants.swift; sourceTree = "<group>"; };
-		3BA5279428C527FE001C9DD6 /* UIImage + extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + extension.swift"; sourceTree = "<group>"; };
-		3BA5279528C527FE001C9DD6 /* Sizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
-		3BA5279628C527FE001C9DD6 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
-		3BA5279728C527FE001C9DD6 /* UIViewController + extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
-		3BA5279828C527FE001C9DD6 /* TextFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
-		3BA5279928C527FE001C9DD6 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		3BA5279A28C527FE001C9DD6 /* UIScrollView + extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView + extension.swift"; sourceTree = "<group>"; };
-		3BA5279B28C527FE001C9DD6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		3BA527AE28C52804001C9DD6 /* Launches.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Launches.JSON; sourceTree = "<group>"; };
-		3BA527AF28C52804001C9DD6 /* Rockets.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rockets.JSON; sourceTree = "<group>"; };
-		3BA527B128C52805001C9DD6 /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
-		3BA527B228C52805001C9DD6 /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
-		3BA527B328C52805001C9DD6 /* FontNames */ = {isa = PBXFileReference; lastKnownFileType = text; path = FontNames; sourceTree = "<group>"; };
-		3BA527B428C52806001C9DD6 /* LabGrotesque-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Thin.ttf"; sourceTree = "<group>"; };
-		3BA527B528C52806001C9DD6 /* LabGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Medium.ttf"; sourceTree = "<group>"; };
-		3BA527B728C52806001C9DD6 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
-		3BA527B828C52806001C9DD6 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
-		3BA527B928C52806001C9DD6 /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
-		3BA527BA28C52807001C9DD6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		3BA527BB28C52807001C9DD6 /* UIImage + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + extension.swift"; sourceTree = "<group>"; };
-		3BA527BC28C52807001C9DD6 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
-		3BA527BD28C52807001C9DD6 /* UIScrollView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView + extension.swift"; sourceTree = "<group>"; };
-		3BA527BE28C52808001C9DD6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		3BA527BF28C52808001C9DD6 /* ObserverConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConstants.swift; sourceTree = "<group>"; };
-		3BA527C228C646CC001C9DD6 /* Launches.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Launches.JSON; sourceTree = "<group>"; };
-		3BA527C328C646CC001C9DD6 /* Rockets.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rockets.JSON; sourceTree = "<group>"; };
-		3BA527C528C646CC001C9DD6 /* FontNames */ = {isa = PBXFileReference; lastKnownFileType = text; path = FontNames; sourceTree = "<group>"; };
-		3BA527C628C646CC001C9DD6 /* LabGrotesque-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Thin.ttf"; sourceTree = "<group>"; };
-		3BA527C728C646CC001C9DD6 /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
-		3BA527C828C646CC001C9DD6 /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
-		3BA527C928C646CC001C9DD6 /* LabGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Medium.ttf"; sourceTree = "<group>"; };
-		3BA527CB28C646CC001C9DD6 /* ObserverConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConstants.swift; sourceTree = "<group>"; };
-		3BA527CC28C646CC001C9DD6 /* UIImage + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + extension.swift"; sourceTree = "<group>"; };
-		3BA527CD28C646CC001C9DD6 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
-		3BA527CE28C646CC001C9DD6 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
-		3BA527CF28C646CC001C9DD6 /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
-		3BA527D028C646CC001C9DD6 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
-		3BA527D128C646CC001C9DD6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		3BA527D228C646CC001C9DD6 /* UIScrollView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView + extension.swift"; sourceTree = "<group>"; };
-		3BA527D328C646CC001C9DD6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		3BA527D528C646CD001C9DD6 /* ObserverConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConstants.swift; sourceTree = "<group>"; };
-		3BA527D628C646CD001C9DD6 /* UIImage + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + extension.swift"; sourceTree = "<group>"; };
-		3BA527D728C646CD001C9DD6 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
-		3BA527D828C646CD001C9DD6 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
-		3BA527D928C646CD001C9DD6 /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
-		3BA527DA28C646CD001C9DD6 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
-		3BA527DB28C646CD001C9DD6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		3BA527DC28C646CD001C9DD6 /* UIScrollView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView + extension.swift"; sourceTree = "<group>"; };
-		3BA527DD28C646CD001C9DD6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		3BA527DE28C646CD001C9DD6 /* ObserverConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ObserverConstants.swift; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/ObserverConstants.swift"; sourceTree = "<group>"; };
-		3BA527DF28C646CD001C9DD6 /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController + extension.swift"; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/UIViewController + extension.swift"; sourceTree = "<group>"; };
-		3BA527E028C646CD001C9DD6 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextFormatter.swift; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/TextFormatter.swift"; sourceTree = "<group>"; };
-		3BA527E128C646CD001C9DD6 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/Fonts.swift"; sourceTree = "<group>"; };
-		3BA527E228C646CD001C9DD6 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Sizes.swift; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/Sizes.swift"; sourceTree = "<group>"; };
-		3BA527E328C646CD001C9DD6 /* UIScrollView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIScrollView + extension.swift"; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/UIScrollView + extension.swift"; sourceTree = "<group>"; };
-		3BA527E428C646CD001C9DD6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/Colors.swift"; sourceTree = "<group>"; };
-		3BA527E528C646CD001C9DD6 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIs.swift; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/APIs.swift"; sourceTree = "<group>"; };
-		3BA527E628C646CD001C9DD6 /* UIImage + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage + extension.swift"; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Helpers/UIImage + extension.swift"; sourceTree = "<group>"; };
-		3BA527E828C646CD001C9DD6 /* Launches.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Launches.JSON; sourceTree = "<group>"; };
-		3BA527E928C646CD001C9DD6 /* Rockets.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rockets.JSON; sourceTree = "<group>"; };
-		3BA527EA28C646CD001C9DD6 /* Rockets.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Rockets.JSON; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/JSONs/Rockets.JSON"; sourceTree = "<group>"; };
-		3BA527EB28C646CD001C9DD6 /* Launches.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Launches.JSON; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/JSONs/Launches.JSON"; sourceTree = "<group>"; };
-		3BA527ED28C646CD001C9DD6 /* FontNames */ = {isa = PBXFileReference; lastKnownFileType = text; path = FontNames; sourceTree = "<group>"; };
-		3BA527EE28C646CD001C9DD6 /* LabGrotesque-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Thin.ttf"; sourceTree = "<group>"; };
-		3BA527EF28C646CD001C9DD6 /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
-		3BA527F028C646CD001C9DD6 /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
-		3BA527F128C646CD001C9DD6 /* LabGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Medium.ttf"; sourceTree = "<group>"; };
-		3BA527F228C646CD001C9DD6 /* LabGrotesque-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LabGrotesque-Thin.ttf"; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Fonts/LabGrotesque-Thin.ttf"; sourceTree = "<group>"; };
-		3BA527F328C646CD001C9DD6 /* LabGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LabGrotesque-Medium.ttf"; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Fonts/LabGrotesque-Medium.ttf"; sourceTree = "<group>"; };
-		3BA527F428C646CD001C9DD6 /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LabGrotesque-Bold.ttf"; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Fonts/LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
-		3BA527F528C646CD001C9DD6 /* FontNames */ = {isa = PBXFileReference; lastKnownFileType = text; name = FontNames; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Fonts/FontNames"; sourceTree = "<group>"; };
-		3BA527F628C646CD001C9DD6 /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LabGrotesque-Regular.ttf"; path = "../../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files/Fonts/LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
+		3B9FA31D28B3A24100AC9927 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		3B9FA32028B3AA1B00AC9927 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkManager.swift"; sourceTree = "<group>"; };
+		3BA527F928C64A15001C9DD6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		3BA5280628C655DD001C9DD6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3BA5280828C65C8A001C9DD6 /* RocketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewModel.swift; sourceTree = "<group>"; };
+		3BA5280A28C65D23001C9DD6 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		3BA5280C28C65D6D001C9DD6 /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
+		3BA5280E28C66A45001C9DD6 /* RocketsPackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsPackViewModel.swift; sourceTree = "<group>"; };
 		3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BC3438828BE6619000161B0 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
-		3BC3438A28BE6EA7000161B0 /* RocketNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketNetwork.swift; sourceTree = "<group>"; };
+		3BC3438A28BE6EA7000161B0 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,15 +114,17 @@
 		3B53D16828A3B12F00210ADE /* testSpaceXApp */ = {
 			isa = PBXGroup;
 			children = (
+				3B53D17D28A3B76B00210ADE /* Application */,
+				3B53D17F28A3B7A600210ADE /* Controllers */,
+				3B53D18028A3B7AF00210ADE /* View */,
+				3BA527FB28C64F6C001C9DD6 /* ViewModels */,
 				3B74778E28AF81960016E8EF /* Network */,
 				3B74777F28AD317A0016E8EF /* Model */,
 				3B53D18528A3CA5700210ADE /* Extensions */,
-				3B53D17D28A3B76B00210ADE /* Application */,
-				3B53D18028A3B7AF00210ADE /* View */,
 				3B53D18128A3B7B700210ADE /* Resources */,
-				3BA527AC28C52804001C9DD6 /* Supporting Files */,
-				3BA527C028C646CC001C9DD6 /* Supporting Files */,
-				3B53D17F28A3B7A600210ADE /* Controllers */,
+				3BA5280628C655DD001C9DD6 /* API.swift */,
+				3BA5280A28C65D23001C9DD6 /* Enums.swift */,
+				3BA5280C28C65D6D001C9DD6 /* Ext.swift */,
 			);
 			path = testSpaceXApp;
 			sourceTree = "<group>";
@@ -227,10 +141,10 @@
 		3B53D17F28A3B7A600210ADE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3BA5278828C527FE001C9DD6 /* Supporting Files */,
+				3BA527F928C64A15001C9DD6 /* PageViewController.swift */,
+				3B74778628AE56070016E8EF /* MainVC.swift */,
 				3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */,
 				3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */,
-				3B74778428AE4BE30016E8EF /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				3B74778828AE78270016E8EF /* DataView */,
-				3B74778628AE56070016E8EF /* MainCollectionViewCell.swift */,
 			);
 			path = MainVC;
 			sourceTree = "<group>";
@@ -288,8 +201,8 @@
 		3B74777F28AD317A0016E8EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3B9FA31D28B3A24100AC9927 /* LaunchNetwork.swift */,
-				3BC3438A28BE6EA7000161B0 /* RocketNetwork.swift */,
+				3B9FA31D28B3A24100AC9927 /* Launch.swift */,
+				3BC3438A28BE6EA7000161B0 /* Rocket.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,208 +219,18 @@
 		3B74778E28AF81960016E8EF /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3B9FA31F28B3AA1B00AC9927 /* NetworkDataFetch.swift */,
-				3B9FA32028B3AA1B00AC9927 /* NetworkRequest.swift */,
+				3B9FA32028B3AA1B00AC9927 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		3BA5278828C527FE001C9DD6 /* Supporting Files */ = {
+		3BA527FB28C64F6C001C9DD6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				3BA5278928C527FE001C9DD6 /* JSONs */,
-				3BA5278C28C527FE001C9DD6 /* Fonts */,
-				3BA5279228C527FE001C9DD6 /* Helpers */,
+				3BA5280828C65C8A001C9DD6 /* RocketViewModel.swift */,
+				3BA5280E28C66A45001C9DD6 /* RocketsPackViewModel.swift */,
 			);
-			name = "Supporting Files";
-			path = "../../../../../../Downloads/SpaceXRocketsApp-main/SpaceXRocketsApp/Supporting Files";
-			sourceTree = "<group>";
-		};
-		3BA5278928C527FE001C9DD6 /* JSONs */ = {
-			isa = PBXGroup;
-			children = (
-				3BA5278A28C527FE001C9DD6 /* Launches.JSON */,
-				3BA5278B28C527FE001C9DD6 /* Rockets.JSON */,
-			);
-			path = JSONs;
-			sourceTree = "<group>";
-		};
-		3BA5278C28C527FE001C9DD6 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				3BA5278D28C527FE001C9DD6 /* FontNames */,
-				3BA5278E28C527FE001C9DD6 /* LabGrotesque-Thin.ttf */,
-				3BA5278F28C527FE001C9DD6 /* LabGrotesque-Regular.ttf */,
-				3BA5279028C527FE001C9DD6 /* LabGrotesque-Bold.ttf */,
-				3BA5279128C527FE001C9DD6 /* LabGrotesque-Medium.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		3BA5279228C527FE001C9DD6 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				3BA5279328C527FE001C9DD6 /* ObserverConstants.swift */,
-				3BA5279428C527FE001C9DD6 /* UIImage + extension.swift */,
-				3BA5279528C527FE001C9DD6 /* Sizes.swift */,
-				3BA5279628C527FE001C9DD6 /* APIs.swift */,
-				3BA5279728C527FE001C9DD6 /* UIViewController + extension.swift */,
-				3BA5279828C527FE001C9DD6 /* TextFormatter.swift */,
-				3BA5279928C527FE001C9DD6 /* Fonts.swift */,
-				3BA5279A28C527FE001C9DD6 /* UIScrollView + extension.swift */,
-				3BA5279B28C527FE001C9DD6 /* Colors.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		3BA527AC28C52804001C9DD6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527AD28C52804001C9DD6 /* JSONs */,
-				3BA527B028C52805001C9DD6 /* Fonts */,
-				3BA527B628C52806001C9DD6 /* Helpers */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3BA527AD28C52804001C9DD6 /* JSONs */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527AE28C52804001C9DD6 /* Launches.JSON */,
-				3BA527AF28C52804001C9DD6 /* Rockets.JSON */,
-			);
-			path = JSONs;
-			sourceTree = "<group>";
-		};
-		3BA527B028C52805001C9DD6 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527B328C52805001C9DD6 /* FontNames */,
-				3BA527B428C52806001C9DD6 /* LabGrotesque-Thin.ttf */,
-				3BA527B128C52805001C9DD6 /* LabGrotesque-Regular.ttf */,
-				3BA527B228C52805001C9DD6 /* LabGrotesque-Bold.ttf */,
-				3BA527B528C52806001C9DD6 /* LabGrotesque-Medium.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		3BA527B628C52806001C9DD6 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527BF28C52808001C9DD6 /* ObserverConstants.swift */,
-				3BA527BB28C52807001C9DD6 /* UIImage + extension.swift */,
-				3BA527B828C52806001C9DD6 /* Sizes.swift */,
-				3BA527BC28C52807001C9DD6 /* APIs.swift */,
-				3BA527B928C52806001C9DD6 /* UIViewController + extension.swift */,
-				3BA527B728C52806001C9DD6 /* TextFormatter.swift */,
-				3BA527BE28C52808001C9DD6 /* Fonts.swift */,
-				3BA527BD28C52807001C9DD6 /* UIScrollView + extension.swift */,
-				3BA527BA28C52807001C9DD6 /* Colors.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		3BA527C028C646CC001C9DD6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527C128C646CC001C9DD6 /* JSONs */,
-				3BA527E728C646CD001C9DD6 /* JSONs */,
-				3BA527C428C646CC001C9DD6 /* Fonts */,
-				3BA527EC28C646CD001C9DD6 /* Fonts */,
-				3BA527D428C646CD001C9DD6 /* Helpers */,
-				3BA527CA28C646CC001C9DD6 /* Helpers */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3BA527C128C646CC001C9DD6 /* JSONs */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527C228C646CC001C9DD6 /* Launches.JSON */,
-				3BA527C328C646CC001C9DD6 /* Rockets.JSON */,
-			);
-			path = JSONs;
-			sourceTree = "<group>";
-		};
-		3BA527C428C646CC001C9DD6 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527C528C646CC001C9DD6 /* FontNames */,
-				3BA527C628C646CC001C9DD6 /* LabGrotesque-Thin.ttf */,
-				3BA527C728C646CC001C9DD6 /* LabGrotesque-Regular.ttf */,
-				3BA527C828C646CC001C9DD6 /* LabGrotesque-Bold.ttf */,
-				3BA527C928C646CC001C9DD6 /* LabGrotesque-Medium.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		3BA527CA28C646CC001C9DD6 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527CB28C646CC001C9DD6 /* ObserverConstants.swift */,
-				3BA527CC28C646CC001C9DD6 /* UIImage + extension.swift */,
-				3BA527CD28C646CC001C9DD6 /* Sizes.swift */,
-				3BA527CE28C646CC001C9DD6 /* APIs.swift */,
-				3BA527CF28C646CC001C9DD6 /* UIViewController + extension.swift */,
-				3BA527D028C646CC001C9DD6 /* TextFormatter.swift */,
-				3BA527D128C646CC001C9DD6 /* Fonts.swift */,
-				3BA527D228C646CC001C9DD6 /* UIScrollView + extension.swift */,
-				3BA527D328C646CC001C9DD6 /* Colors.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		3BA527D428C646CD001C9DD6 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527D528C646CD001C9DD6 /* ObserverConstants.swift */,
-				3BA527DE28C646CD001C9DD6 /* ObserverConstants.swift */,
-				3BA527D628C646CD001C9DD6 /* UIImage + extension.swift */,
-				3BA527E628C646CD001C9DD6 /* UIImage + extension.swift */,
-				3BA527D728C646CD001C9DD6 /* Sizes.swift */,
-				3BA527E228C646CD001C9DD6 /* Sizes.swift */,
-				3BA527D828C646CD001C9DD6 /* APIs.swift */,
-				3BA527E528C646CD001C9DD6 /* APIs.swift */,
-				3BA527D928C646CD001C9DD6 /* UIViewController + extension.swift */,
-				3BA527DF28C646CD001C9DD6 /* UIViewController + extension.swift */,
-				3BA527DA28C646CD001C9DD6 /* TextFormatter.swift */,
-				3BA527E028C646CD001C9DD6 /* TextFormatter.swift */,
-				3BA527DB28C646CD001C9DD6 /* Fonts.swift */,
-				3BA527E128C646CD001C9DD6 /* Fonts.swift */,
-				3BA527DC28C646CD001C9DD6 /* UIScrollView + extension.swift */,
-				3BA527E428C646CD001C9DD6 /* Colors.swift */,
-				3BA527E328C646CD001C9DD6 /* UIScrollView + extension.swift */,
-				3BA527DD28C646CD001C9DD6 /* Colors.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		3BA527E728C646CD001C9DD6 /* JSONs */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527E828C646CD001C9DD6 /* Launches.JSON */,
-				3BA527EB28C646CD001C9DD6 /* Launches.JSON */,
-				3BA527EA28C646CD001C9DD6 /* Rockets.JSON */,
-				3BA527E928C646CD001C9DD6 /* Rockets.JSON */,
-			);
-			path = JSONs;
-			sourceTree = "<group>";
-		};
-		3BA527EC28C646CD001C9DD6 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				3BA527ED28C646CD001C9DD6 /* FontNames */,
-				3BA527F528C646CD001C9DD6 /* FontNames */,
-				3BA527EE28C646CD001C9DD6 /* LabGrotesque-Thin.ttf */,
-				3BA527F228C646CD001C9DD6 /* LabGrotesque-Thin.ttf */,
-				3BA527EF28C646CD001C9DD6 /* LabGrotesque-Regular.ttf */,
-				3BA527F628C646CD001C9DD6 /* LabGrotesque-Regular.ttf */,
-				3BA527F028C646CD001C9DD6 /* LabGrotesque-Bold.ttf */,
-				3BA527F428C646CD001C9DD6 /* LabGrotesque-Bold.ttf */,
-				3BA527F328C646CD001C9DD6 /* LabGrotesque-Medium.ttf */,
-				3BA527F128C646CD001C9DD6 /* LabGrotesque-Medium.ttf */,
-			);
-			path = Fonts;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		3BC3438528BE49AF000161B0 /* DataViewCell */ = {
@@ -577,15 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA5279C28C527FE001C9DD6 /* Launches.JSON in Resources */,
 				3B53D17328A3B13200210ADE /* Assets.xcassets in Resources */,
-				3BA5279E28C527FE001C9DD6 /* FontNames in Resources */,
-				3BA5279F28C527FE001C9DD6 /* LabGrotesque-Thin.ttf in Resources */,
 				3B74777C28AD30560016E8EF /* model.json in Resources */,
-				3BA527A128C527FE001C9DD6 /* LabGrotesque-Bold.ttf in Resources */,
-				3BA527A228C527FE001C9DD6 /* LabGrotesque-Medium.ttf in Resources */,
-				3BA5279D28C527FE001C9DD6 /* Rockets.JSON in Resources */,
-				3BA527A028C527FE001C9DD6 /* LabGrotesque-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,35 +312,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA527A928C527FE001C9DD6 /* Fonts.swift in Sources */,
-				3BA527AB28C527FE001C9DD6 /* Colors.swift in Sources */,
 				3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */,
-				3B74778528AE4BE30016E8EF /* MainViewController.swift in Sources */,
 				3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */,
 				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
 				3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
-				3BA527A828C527FE001C9DD6 /* TextFormatter.swift in Sources */,
-				3B9FA31E28B3A24100AC9927 /* LaunchNetwork.swift in Sources */,
-				3BC3438B28BE6EA7000161B0 /* RocketNetwork.swift in Sources */,
-				3BA527AA28C527FE001C9DD6 /* UIScrollView + extension.swift in Sources */,
-				3BA527A628C527FE001C9DD6 /* APIs.swift in Sources */,
+				3BA5280D28C65D6D001C9DD6 /* Ext.swift in Sources */,
+				3B9FA31E28B3A24100AC9927 /* Launch.swift in Sources */,
+				3BC3438B28BE6EA7000161B0 /* Rocket.swift in Sources */,
 				3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */,
-				3BA527A728C527FE001C9DD6 /* UIViewController + extension.swift in Sources */,
+				3BA527FA28C64A15001C9DD6 /* PageViewController.swift in Sources */,
+				3BA5280B28C65D23001C9DD6 /* Enums.swift in Sources */,
 				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
-				3B9FA32228B3AA1B00AC9927 /* NetworkRequest.swift in Sources */,
+				3B9FA32228B3AA1B00AC9927 /* NetworkManager.swift in Sources */,
 				3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */,
-				3BA527A528C527FE001C9DD6 /* Sizes.swift in Sources */,
 				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
-				3BA527A428C527FE001C9DD6 /* UIImage + extension.swift in Sources */,
-				3BA527A328C527FE001C9DD6 /* ObserverConstants.swift in Sources */,
+				3BA5280F28C66A45001C9DD6 /* RocketsPackViewModel.swift in Sources */,
+				3BA5280728C655DD001C9DD6 /* API.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
-				3B74778728AE56070016E8EF /* MainCollectionViewCell.swift in Sources */,
+				3B74778728AE56070016E8EF /* MainVC.swift in Sources */,
 				3B0FF8DB28A646E100B45ED2 /* Resources.swift in Sources */,
-				3B9FA32128B3AA1B00AC9927 /* NetworkDataFetch.swift in Sources */,
 				3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */,
 				3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */,
+				3BA5280928C65C8A001C9DD6 /* RocketViewModel.swift in Sources */,
 				3B74777E28AD30A00016E8EF /* Bundle + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
