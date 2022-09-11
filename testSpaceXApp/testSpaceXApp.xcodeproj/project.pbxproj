@@ -13,6 +13,8 @@
 		3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */; };
 		3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8DE28A668E600B45ED2 /* UILabel + Extensions.swift */; };
 		3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8E128A66C0F00B45ED2 /* SettingsTableViewCell.swift */; };
+		3B3349A228C7A07400E6260A /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3349A128C7A07400E6260A /* LaunchViewModel.swift */; };
+		3B3349A428C7A08400E6260A /* LaunchViewModelPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3349A328C7A08400E6260A /* LaunchViewModelPack.swift */; };
 		3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16928A3B12F00210ADE /* AppDelegate.swift */; };
 		3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16B28A3B12F00210ADE /* SceneDelegate.swift */; };
 		3B53D17328A3B13200210ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B53D17228A3B13200210ADE /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B0FF8DE28A668E600B45ED2 /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
 		3B0FF8E128A66C0F00B45ED2 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		3B3349A128C7A07400E6260A /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		3B3349A328C7A08400E6260A /* LaunchViewModelPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModelPack.swift; sourceTree = "<group>"; };
 		3B53D16628A3B12F00210ADE /* testSpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B53D16928A3B12F00210ADE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B53D16B28A3B12F00210ADE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 			children = (
 				3BA5280828C65C8A001C9DD6 /* RocketViewModel.swift */,
 				3BA5280E28C66A45001C9DD6 /* RocketsPackViewModel.swift */,
+				3B3349A128C7A07400E6260A /* LaunchViewModel.swift */,
+				3B3349A328C7A08400E6260A /* LaunchViewModelPack.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -331,6 +337,8 @@
 				3BA5280728C655DD001C9DD6 /* API.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
+				3B3349A428C7A08400E6260A /* LaunchViewModelPack.swift in Sources */,
+				3B3349A228C7A07400E6260A /* LaunchViewModel.swift in Sources */,
 				3B74778728AE56070016E8EF /* MainVC.swift in Sources */,
 				3B0FF8DB28A646E100B45ED2 /* Resources.swift in Sources */,
 				3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */,

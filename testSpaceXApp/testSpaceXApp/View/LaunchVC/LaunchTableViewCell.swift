@@ -42,6 +42,15 @@ class LaunchTableViewCell: UITableViewCell {
             return imageView
         }()
     
+    var launches: LaunchViewModel? {
+        didSet {
+            if let launches = launches {
+                launchNameLabel.text = launches.name
+                dateLaunchLabel.text = launches.date
+                statusLaunchImageView.image = UIImage(named: launches.picture)
+            }
+        }
+    }
     private var verticalDataLaunchStack = UIStackView()
     
     

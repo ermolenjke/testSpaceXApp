@@ -34,7 +34,7 @@ class DataView: UIView {
     
     let rocketNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "NAME"
+        label.font = UIFont.boldSystemFont(ofSize: 25)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -70,7 +70,6 @@ class DataView: UIView {
         tableView.separatorStyle = .none
         tableView.bounces = false
         tableView.showsVerticalScrollIndicator = false
-//        tableView.isPagingEnabled = true
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()

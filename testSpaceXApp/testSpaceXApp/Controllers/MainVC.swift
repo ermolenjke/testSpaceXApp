@@ -23,13 +23,19 @@ class MainVC: UIViewController {
         return imageView
     }()
     
-    let dataView = DataView()
     var pageIndex = 0
+    let dataView = DataView()
     var viewModel = RocketsPackViewModel()
+    var rocket: RocketViewModel? {
+        didSet {
+            updateValues()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getRockets()
         setupViews()
         setConstraints()
         setDelegates()
@@ -59,11 +65,29 @@ class MainVC: UIViewController {
         viewModel.getRockets { _ in
            
             self.dataView.rocket = self.viewModel.rocketPack[self.pageIndex]
+            self.rocket = self.viewModel.rocketPack[self.pageIndex]
 //            self.infoScrollView.rocket = self.viewModel.rocketPack[self.pageIndex]
 //            self.descriptionScrollView.rocket = self.viewModel.rocketPack[self.pageIndex]
         }
     }
     
+    func updateValues() {
+        if let rocket = rocket {
+            dataView.rocketNameLabel.text = rocket.name
+            
+            if let url = rocket.imageURL {
+                NetworkManager.shared.getImage(urlString: url) { data in
+                    guard let data = data else { return }
+                    
+                    DispatchQueue.main.async {
+                        self.rocketImageView.image = UIImage(data: data)
+                    }
+                }
+            } else {
+                self.rocketImageView.image = UIImage(systemName: Pictures.noConnection.rawValue)
+            }
+        }
+    }
     
     
     private func setConstraints() {
@@ -76,10 +100,10 @@ class MainVC: UIViewController {
         ])
         
         NSLayoutConstraint.activate([
-            rocketImageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 60),
+            rocketImageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: -60),
             rocketImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             rocketImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            rocketImageView.heightAnchor.constraint(equalToConstant: 300)
+            rocketImageView.heightAnchor.constraint(equalToConstant: 400)
         ])
         
         NSLayoutConstraint.activate([
@@ -101,9 +125,11 @@ extension MainVC: ShowLaunchVCProtocol, ShowSettingsVCProtocol {
     }
     
     func buttonTapped() {
-        
+       
         let vc = LaunchViewController()
-        vc.rocket = viewModel.rocketPack[self.pageIndex].id!
+        vc.rocket = viewModel.rocketPack[self.pageIndex].id ?? "false"
+        vc.settingsLabel.text = viewModel.rocketPack[self.pageIndex].name
+        self.present(vc, animated: true)
     }
 }
 

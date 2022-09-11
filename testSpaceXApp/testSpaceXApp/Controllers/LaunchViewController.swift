@@ -9,7 +9,7 @@ import UIKit
 
 class LaunchViewController: UIViewController {
     
-    private let settingsLabel = UILabel(text: "Настройки")
+    let settingsLabel = UILabel(text: "Настройки")
     
     private let closeButton: UIButton = {
         let button = UIButton(type: .system)
@@ -30,6 +30,7 @@ class LaunchViewController: UIViewController {
         return tableView
     }()
     
+    var viewModel = LaunchPackViewModel()
     private let idLaunchTableViewCell = "idLaunchTableViewCell"
     private var horizontalLabelsStack = UIStackView()
     var rocket = ""
@@ -39,41 +40,29 @@ class LaunchViewController: UIViewController {
         
         view.backgroundColor = .black
         
+        getLaunch()
         setDelegates()
         setupViews()
         setContrains()
         launchTableView.register(LaunchTableViewCell.self, forCellReuseIdentifier: idLaunchTableViewCell)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-        getLaunch()
-        launchTableView.reloadData()
-    }
-    
     @objc private func closeVC() {
         dismiss(animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getLaunch()
+
+    }
+    
     private func getLaunch() {
         
-//        NetworkDataFetch.shared.fetchLaunch { model, error in
-//            guard let launch = model else { return }
-//            self.launches = launch
-//            print(self.launches)
-//            print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-//
-////            for launch in self.launches {
-////
-////                if launch.rocket.rawValue == "5e9d0d95eda69955f709d1eb" {
-////                    self.falcon1Array.append(launch)
-////                    print(self.falcon1Array)
-////                }
-////
-////            }
-//
-//        }
+        viewModel.getLaunch(rocket) { (_) in
+            self.launchTableView.reloadData()
+        }
     }
+    
     
     private func setDelegates() {
         
@@ -111,16 +100,22 @@ class LaunchViewController: UIViewController {
 extension LaunchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return launches.count
-        return 5
+        return viewModel.launchPack.count > 0 ? viewModel.launchPack.count : 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = launchTableView.dequeueReusableCell(withIdentifier: idLaunchTableViewCell, for: indexPath) as! LaunchTableViewCell
-//        let model = launches[indexPath.row]
+        let cell = launchTableView.dequeueReusableCell(withIdentifier: idLaunchTableViewCell, for: indexPath)
+            as! LaunchTableViewCell
         
-//        cell.cellConfigure(model: model)
-        return cell
+        if viewModel.launchPack.count == 0 {
+            let launches = Launch.init(rocket: Pictures.success.rawValue, success: true, name: "На сегодняшний день еще ожидаем", date_utc: "")
+            cell.launches = LaunchViewModel.init(launches: launches)
+            return cell ?? UITableViewCell()
+        } else {
+            let launches = viewModel.launchPack[indexPath.row]
+            cell.launches = launches
+            return cell ?? UITableViewCell()
+        }
     }
 }
 
