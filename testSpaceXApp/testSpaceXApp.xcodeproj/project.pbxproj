@@ -24,6 +24,22 @@
 		3B74777C28AD30560016E8EF /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B74777B28AD30560016E8EF /* model.json */; };
 		3B74777E28AD30A00016E8EF /* Bundle + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */; };
 		3B74778728AE56070016E8EF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778628AE56070016E8EF /* MainVC.swift */; };
+		3B92541C28CFB6ED0092B998 /* Rockets.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 3B92541A28CFB6ED0092B998 /* Rockets.JSON */; };
+		3B92541D28CFB6ED0092B998 /* Launches.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 3B92541B28CFB6ED0092B998 /* Launches.JSON */; };
+		3B92542328CFB7170092B998 /* LabGrotesque-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B92541E28CFB7160092B998 /* LabGrotesque-Thin.ttf */; };
+		3B92542428CFB7170092B998 /* LabGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B92541F28CFB7170092B998 /* LabGrotesque-Medium.ttf */; };
+		3B92542528CFB7170092B998 /* LabGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B92542028CFB7170092B998 /* LabGrotesque-Bold.ttf */; };
+		3B92542628CFB7170092B998 /* FontNames in Resources */ = {isa = PBXBuildFile; fileRef = 3B92542128CFB7170092B998 /* FontNames */; };
+		3B92542728CFB7170092B998 /* LabGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B92542228CFB7170092B998 /* LabGrotesque-Regular.ttf */; };
+		3B92542A28CFB7430092B998 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92542928CFB7430092B998 /* Colors.swift */; };
+		3B92542C28CFB7530092B998 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92542B28CFB7530092B998 /* Fonts.swift */; };
+		3B92542E28CFB75E0092B998 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92542D28CFB75E0092B998 /* Sizes.swift */; };
+		3B92543028CFB76B0092B998 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92542F28CFB76B0092B998 /* APIs.swift */; };
+		3B92543228CFB7870092B998 /* ObserverConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92543128CFB7870092B998 /* ObserverConstants.swift */; };
+		3B92543428CFB7990092B998 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92543328CFB7990092B998 /* TextFormatter.swift */; };
+		3B92543628CFB7BA0092B998 /* UIImage + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92543528CFB7BA0092B998 /* UIImage + extensions.swift */; };
+		3B92543828CFB7D00092B998 /* UIScrollView + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92543728CFB7D00092B998 /* UIScrollView + extensions.swift */; };
+		3B92543A28CFB7E90092B998 /* UIViewController + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92543928CFB7E90092B998 /* UIViewController + extension.swift */; };
 		3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */; };
 		3B9FA31E28B3A24100AC9927 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA31D28B3A24100AC9927 /* Launch.swift */; };
 		3B9FA32228B3AA1B00AC9927 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FA32028B3AA1B00AC9927 /* NetworkManager.swift */; };
@@ -58,6 +74,22 @@
 		3B74777B28AD30560016E8EF /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = model.json; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/model.json"; sourceTree = "<group>"; };
 		3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bundle + Extension.swift"; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/Extensions/Bundle + Extension.swift"; sourceTree = "<group>"; };
 		3B74778628AE56070016E8EF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		3B92541A28CFB6ED0092B998 /* Rockets.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rockets.JSON; sourceTree = "<group>"; };
+		3B92541B28CFB6ED0092B998 /* Launches.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Launches.JSON; sourceTree = "<group>"; };
+		3B92541E28CFB7160092B998 /* LabGrotesque-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Thin.ttf"; sourceTree = "<group>"; };
+		3B92541F28CFB7170092B998 /* LabGrotesque-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Medium.ttf"; sourceTree = "<group>"; };
+		3B92542028CFB7170092B998 /* LabGrotesque-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Bold.ttf"; sourceTree = "<group>"; };
+		3B92542128CFB7170092B998 /* FontNames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FontNames; sourceTree = "<group>"; };
+		3B92542228CFB7170092B998 /* LabGrotesque-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LabGrotesque-Regular.ttf"; sourceTree = "<group>"; };
+		3B92542928CFB7430092B998 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3B92542B28CFB7530092B998 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3B92542D28CFB75E0092B998 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		3B92542F28CFB76B0092B998 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		3B92543128CFB7870092B998 /* ObserverConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverConstants.swift; sourceTree = "<group>"; };
+		3B92543328CFB7990092B998 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		3B92543528CFB7BA0092B998 /* UIImage + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + extensions.swift"; sourceTree = "<group>"; };
+		3B92543728CFB7D00092B998 /* UIScrollView + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView + extensions.swift"; sourceTree = "<group>"; };
+		3B92543928CFB7E90092B998 /* UIViewController + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + extension.swift"; sourceTree = "<group>"; };
 		3B99928F28BCFFAE002B9AE1 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 		3B9FA31D28B3A24100AC9927 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		3B9FA32028B3AA1B00AC9927 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = "../../../../../../Downloads/SecondCourse_9-2/FirstApp_Process/FirstApp_Process/Network/NetworkManager.swift"; sourceTree = "<group>"; };
@@ -103,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				3B53D16828A3B12F00210ADE /* testSpaceXApp */,
+				3B92541628CFB6500092B998 /* SupportingFiles */,
 				3B53D16728A3B12F00210ADE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +162,7 @@
 				3BA5280628C655DD001C9DD6 /* API.swift */,
 				3BA5280A28C65D23001C9DD6 /* Enums.swift */,
 				3BA5280C28C65D6D001C9DD6 /* Ext.swift */,
+				3B92541528CFB5F40092B998 /* ___________ */,
 			);
 			path = testSpaceXApp;
 			sourceTree = "<group>";
@@ -228,6 +262,60 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		3B92541528CFB5F40092B998 /* ___________ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "___________";
+			sourceTree = "<group>";
+		};
+		3B92541628CFB6500092B998 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3B92541928CFB6980092B998 /* JSONs */,
+				3B92541828CFB6910092B998 /* Fonts */,
+				3B92541728CFB67F0092B998 /* Helpers */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3B92541728CFB67F0092B998 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3B92542928CFB7430092B998 /* Colors.swift */,
+				3B92542B28CFB7530092B998 /* Fonts.swift */,
+				3B92542D28CFB75E0092B998 /* Sizes.swift */,
+				3B92542F28CFB76B0092B998 /* APIs.swift */,
+				3B92543128CFB7870092B998 /* ObserverConstants.swift */,
+				3B92543328CFB7990092B998 /* TextFormatter.swift */,
+				3B92543528CFB7BA0092B998 /* UIImage + extensions.swift */,
+				3B92543728CFB7D00092B998 /* UIScrollView + extensions.swift */,
+				3B92543928CFB7E90092B998 /* UIViewController + extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3B92541828CFB6910092B998 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3B92542128CFB7170092B998 /* FontNames */,
+				3B92542028CFB7170092B998 /* LabGrotesque-Bold.ttf */,
+				3B92541F28CFB7170092B998 /* LabGrotesque-Medium.ttf */,
+				3B92542228CFB7170092B998 /* LabGrotesque-Regular.ttf */,
+				3B92541E28CFB7160092B998 /* LabGrotesque-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3B92541928CFB6980092B998 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				3B92541B28CFB6ED0092B998 /* Launches.JSON */,
+				3B92541A28CFB6ED0092B998 /* Rockets.JSON */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
 		3BA527FB28C64F6C001C9DD6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,8 +394,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B92541D28CFB6ED0092B998 /* Launches.JSON in Resources */,
 				3B53D17328A3B13200210ADE /* Assets.xcassets in Resources */,
+				3B92542328CFB7170092B998 /* LabGrotesque-Thin.ttf in Resources */,
+				3B92542528CFB7170092B998 /* LabGrotesque-Bold.ttf in Resources */,
+				3B92542628CFB7170092B998 /* FontNames in Resources */,
+				3B92542428CFB7170092B998 /* LabGrotesque-Medium.ttf in Resources */,
+				3B92541C28CFB6ED0092B998 /* Rockets.JSON in Resources */,
 				3B74777C28AD30560016E8EF /* model.json in Resources */,
+				3B92542728CFB7170092B998 /* LabGrotesque-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,19 +419,28 @@
 				3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
 				3BA5280D28C65D6D001C9DD6 /* Ext.swift in Sources */,
+				3B92543428CFB7990092B998 /* TextFormatter.swift in Sources */,
+				3B92542E28CFB75E0092B998 /* Sizes.swift in Sources */,
 				3B9FA31E28B3A24100AC9927 /* Launch.swift in Sources */,
 				3BC3438B28BE6EA7000161B0 /* Rocket.swift in Sources */,
 				3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */,
+				3B92542C28CFB7530092B998 /* Fonts.swift in Sources */,
 				3BA527FA28C64A15001C9DD6 /* PageViewController.swift in Sources */,
+				3B92543028CFB76B0092B998 /* APIs.swift in Sources */,
+				3B92543A28CFB7E90092B998 /* UIViewController + extension.swift in Sources */,
 				3BA5280B28C65D23001C9DD6 /* Enums.swift in Sources */,
+				3B92543628CFB7BA0092B998 /* UIImage + extensions.swift in Sources */,
 				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
 				3B9FA32228B3AA1B00AC9927 /* NetworkManager.swift in Sources */,
 				3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */,
 				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
 				3BA5280F28C66A45001C9DD6 /* RocketsPackViewModel.swift in Sources */,
 				3BA5280728C655DD001C9DD6 /* API.swift in Sources */,
+				3B92542A28CFB7430092B998 /* Colors.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
+				3B92543828CFB7D00092B998 /* UIScrollView + extensions.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
+				3B92543228CFB7870092B998 /* ObserverConstants.swift in Sources */,
 				3B3349A428C7A08400E6260A /* LaunchViewModelPack.swift in Sources */,
 				3B3349A228C7A07400E6260A /* LaunchViewModel.swift in Sources */,
 				3B74778728AE56070016E8EF /* MainVC.swift in Sources */,
