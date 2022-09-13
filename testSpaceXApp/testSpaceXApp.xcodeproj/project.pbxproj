@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8D628A641C300B45ED2 /* LaunchTableViewCell.swift */; };
 		3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8D828A6468700B45ED2 /* UIColor + Extensions.swift */; };
-		3B0FF8DB28A646E100B45ED2 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8DA28A646E100B45ED2 /* Resources.swift */; };
 		3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */; };
 		3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8DE28A668E600B45ED2 /* UILabel + Extensions.swift */; };
 		3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FF8E128A66C0F00B45ED2 /* SettingsTableViewCell.swift */; };
+		3B23F45828D0BADF0002ADDE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23F45728D0BADF0002ADDE /* NetworkManager.swift */; };
+		3B23F45A28D0BB090002ADDE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23F45928D0BB090002ADDE /* DataManager.swift */; };
 		3B3349A228C7A07400E6260A /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3349A128C7A07400E6260A /* LaunchViewModel.swift */; };
 		3B3349A428C7A08400E6260A /* LaunchViewModelPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3349A328C7A08400E6260A /* LaunchViewModelPack.swift */; };
 		3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D16928A3B12F00210ADE /* AppDelegate.swift */; };
@@ -21,7 +22,6 @@
 		3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18328A3C5DE00210ADE /* DataView.swift */; };
 		3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18728A3CA9000210ADE /* UIStackView + Extensions.swift */; };
 		3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */; };
-		3B74777C28AD30560016E8EF /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B74777B28AD30560016E8EF /* model.json */; };
 		3B74777E28AD30A00016E8EF /* Bundle + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */; };
 		3B74778728AE56070016E8EF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74778628AE56070016E8EF /* MainVC.swift */; };
 		3B92541C28CFB6ED0092B998 /* Rockets.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 3B92541A28CFB6ED0092B998 /* Rockets.JSON */; };
@@ -57,10 +57,11 @@
 /* Begin PBXFileReference section */
 		3B0FF8D628A641C300B45ED2 /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
 		3B0FF8D828A6468700B45ED2 /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
-		3B0FF8DA28A646E100B45ED2 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		3B0FF8DC28A6680000B45ED2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B0FF8DE28A668E600B45ED2 /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
 		3B0FF8E128A66C0F00B45ED2 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		3B23F45728D0BADF0002ADDE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3B23F45928D0BB090002ADDE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3B3349A128C7A07400E6260A /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		3B3349A328C7A08400E6260A /* LaunchViewModelPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModelPack.swift; sourceTree = "<group>"; };
 		3B53D16628A3B12F00210ADE /* testSpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +72,6 @@
 		3B53D18328A3C5DE00210ADE /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		3B53D18728A3CA9000210ADE /* UIStackView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extensions.swift"; sourceTree = "<group>"; };
 		3B53D18928A3DD4A00210ADE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
-		3B74777B28AD30560016E8EF /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = model.json; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/model.json"; sourceTree = "<group>"; };
 		3B74777D28AD30A00016E8EF /* Bundle + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bundle + Extension.swift"; path = "../../../../../../Downloads/CreateSecondSectionInUICollectionView-master/MultipleSections/Extensions/Bundle + Extension.swift"; sourceTree = "<group>"; };
 		3B74778628AE56070016E8EF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		3B92541A28CFB6ED0092B998 /* Rockets.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rockets.JSON; sourceTree = "<group>"; };
@@ -131,11 +131,21 @@
 			path = SettingsVC;
 			sourceTree = "<group>";
 		};
+		3B23F45628D0BAB10002ADDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B23F45728D0BADF0002ADDE /* NetworkManager.swift */,
+				3B23F45928D0BB090002ADDE /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		3B53D15D28A3B12F00210ADE = {
 			isa = PBXGroup;
 			children = (
 				3B53D16828A3B12F00210ADE /* testSpaceXApp */,
 				3B92541628CFB6500092B998 /* SupportingFiles */,
+				3B23F45628D0BAB10002ADDE /* Services */,
 				3B53D16728A3B12F00210ADE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -202,8 +212,6 @@
 			children = (
 				3B53D17228A3B13200210ADE /* Assets.xcassets */,
 				3B53D17728A3B13200210ADE /* Info.plist */,
-				3B0FF8DA28A646E100B45ED2 /* Resources.swift */,
-				3B74777B28AD30560016E8EF /* model.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -401,7 +409,6 @@
 				3B92542628CFB7170092B998 /* FontNames in Resources */,
 				3B92542428CFB7170092B998 /* LabGrotesque-Medium.ttf in Resources */,
 				3B92541C28CFB6ED0092B998 /* Rockets.JSON in Resources */,
-				3B74777C28AD30560016E8EF /* model.json in Resources */,
 				3B92542728CFB7170092B998 /* LabGrotesque-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B23F45828D0BADF0002ADDE /* NetworkManager.swift in Sources */,
 				3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */,
 				3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */,
 				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
@@ -437,6 +445,7 @@
 				3BA5280F28C66A45001C9DD6 /* RocketsPackViewModel.swift in Sources */,
 				3BA5280728C655DD001C9DD6 /* API.swift in Sources */,
 				3B92542A28CFB7430092B998 /* Colors.swift in Sources */,
+				3B23F45A28D0BB090002ADDE /* DataManager.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B92543828CFB7D00092B998 /* UIScrollView + extensions.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
@@ -444,7 +453,6 @@
 				3B3349A428C7A08400E6260A /* LaunchViewModelPack.swift in Sources */,
 				3B3349A228C7A07400E6260A /* LaunchViewModel.swift in Sources */,
 				3B74778728AE56070016E8EF /* MainVC.swift in Sources */,
-				3B0FF8DB28A646E100B45ED2 /* Resources.swift in Sources */,
 				3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */,
 				3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */,
 				3BA5280928C65C8A001C9DD6 /* RocketViewModel.swift in Sources */,
