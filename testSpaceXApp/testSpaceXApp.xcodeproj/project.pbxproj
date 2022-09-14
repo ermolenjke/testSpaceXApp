@@ -52,6 +52,17 @@
 		3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */; };
 		3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438828BE6619000161B0 /* DataTableViewCell.swift */; };
 		3BC3438B28BE6EA7000161B0 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3438A28BE6EA7000161B0 /* Rocket.swift */; };
+		3BEAA1BC28D2013A0034D322 /* NavigtionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1BB28D2013A0034D322 /* NavigtionController.swift */; };
+		3BEAA1BF28D201720034D322 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1BE28D201720034D322 /* Router.swift */; };
+		3BEAA1C228D202460034D322 /* AssemblyBuilder in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1C128D202460034D322 /* AssemblyBuilder */; };
+		3BEAA1D428D2039B0034D322 /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1D328D2039B0034D322 /* RocketModel.swift */; };
+		3BEAA1D628D203AE0034D322 /* BasePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1D528D203AE0034D322 /* BasePageViewController.swift */; };
+		3BEAA1D828D203C00034D322 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1D728D203C00034D322 /* BasePresenter.swift */; };
+		3BEAA1DB28D204350034D322 /* RocketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1DA28D204350034D322 /* RocketData.swift */; };
+		3BEAA1DD28D204500034D322 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1DC28D204500034D322 /* MainViewController.swift */; };
+		3BEAA1DF28D2047B0034D322 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1DE28D2047B0034D322 /* MainPresenter.swift */; };
+		3BEAA1E128D204D30034D322 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1E028D204D30034D322 /* LaunchModel.swift */; };
+		3BEAA1E328D204F10034D322 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAA1E228D204F10034D322 /* DetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +113,17 @@
 		3BC3438628BE49F0000161B0 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BC3438828BE6619000161B0 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		3BC3438A28BE6EA7000161B0 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		3BEAA1BB28D2013A0034D322 /* NavigtionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigtionController.swift; sourceTree = "<group>"; };
+		3BEAA1BE28D201720034D322 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3BEAA1C128D202460034D322 /* AssemblyBuilder */ = {isa = PBXFileReference; lastKnownFileType = text; path = AssemblyBuilder; sourceTree = "<group>"; };
+		3BEAA1D328D2039B0034D322 /* RocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketModel.swift; sourceTree = "<group>"; };
+		3BEAA1D528D203AE0034D322 /* BasePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageViewController.swift; sourceTree = "<group>"; };
+		3BEAA1D728D203C00034D322 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		3BEAA1DA28D204350034D322 /* RocketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketData.swift; sourceTree = "<group>"; };
+		3BEAA1DC28D204500034D322 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3BEAA1DE28D2047B0034D322 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		3BEAA1E028D204D30034D322 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
+		3BEAA1E228D204F10034D322 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				3B53D16828A3B12F00210ADE /* testSpaceXApp */,
-				3B92541628CFB6500092B998 /* SupportingFiles */,
-				3B23F45628D0BAB10002ADDE /* Services */,
 				3B53D16728A3B12F00210ADE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -161,7 +181,6 @@
 		3B53D16828A3B12F00210ADE /* testSpaceXApp */ = {
 			isa = PBXGroup;
 			children = (
-				3B53D17D28A3B76B00210ADE /* Application */,
 				3B53D17F28A3B7A600210ADE /* Controllers */,
 				3B53D18028A3B7AF00210ADE /* View */,
 				3BA527FB28C64F6C001C9DD6 /* ViewModels */,
@@ -273,6 +292,9 @@
 		3B92541528CFB5F40092B998 /* ___________ */ = {
 			isa = PBXGroup;
 			children = (
+				3BEAA1B928D2006F0034D322 /* Core */,
+				3B23F45628D0BAB10002ADDE /* Services */,
+				3B92541628CFB6500092B998 /* SupportingFiles */,
 			);
 			path = "___________";
 			sourceTree = "<group>";
@@ -342,6 +364,185 @@
 				3BC3438828BE6619000161B0 /* DataTableViewCell.swift */,
 			);
 			path = DataViewCell;
+			sourceTree = "<group>";
+		};
+		3BEAA1B928D2006F0034D322 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1C328D202740034D322 /* Modules */,
+				3BEAA1C028D202210034D322 /* Assembly */,
+				3BEAA1BD28D201570034D322 /* Routing */,
+				3B53D17D28A3B76B00210ADE /* Application */,
+				3BEAA1BA28D2008A0034D322 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3BEAA1BA28D2008A0034D322 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1BB28D2013A0034D322 /* NavigtionController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		3BEAA1BD28D201570034D322 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1BE28D201720034D322 /* Router.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		3BEAA1C028D202210034D322 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1C128D202460034D322 /* AssemblyBuilder */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3BEAA1C328D202740034D322 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1C728D2028B0034D322 /* BaseModule */,
+				3BEAA1C628D2028A0034D322 /* MainModule */,
+				3BEAA1C528D202860034D322 /* DetailsModule */,
+				3BEAA1C428D202810034D322 /* SettingModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3BEAA1C428D202810034D322 /* SettingModule */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1D228D202FB0034D322 /* View */,
+				3BEAA1D128D202F90034D322 /* Presenter */,
+			);
+			path = SettingModule;
+			sourceTree = "<group>";
+		};
+		3BEAA1C528D202860034D322 /* DetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1D028D202F60034D322 /* Model */,
+				3BEAA1CF28D202F40034D322 /* View */,
+				3BEAA1CE28D202F20034D322 /* Presenter */,
+			);
+			path = DetailsModule;
+			sourceTree = "<group>";
+		};
+		3BEAA1C628D2028A0034D322 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1CD28D202EF0034D322 /* Model */,
+				3BEAA1CC28D202ED0034D322 /* View */,
+				3BEAA1CB28D202EB0034D322 /* Presenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		3BEAA1C728D2028B0034D322 /* BaseModule */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1CA28D202E90034D322 /* Model */,
+				3BEAA1C928D202E60034D322 /* View */,
+				3BEAA1C828D202E40034D322 /* Presenter */,
+			);
+			path = BaseModule;
+			sourceTree = "<group>";
+		};
+		3BEAA1C828D202E40034D322 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1D728D203C00034D322 /* BasePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3BEAA1C928D202E60034D322 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1D528D203AE0034D322 /* BasePageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BEAA1CA28D202E90034D322 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1D328D2039B0034D322 /* RocketModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BEAA1CB28D202EB0034D322 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1DE28D2047B0034D322 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3BEAA1CC28D202ED0034D322 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1D928D2041B0034D322 /* Subview */,
+				3BEAA1DC28D204500034D322 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BEAA1CD28D202EF0034D322 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1DA28D204350034D322 /* RocketData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BEAA1CE28D202F20034D322 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1E228D204F10034D322 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3BEAA1CF28D202F40034D322 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BEAA1D028D202F60034D322 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAA1E028D204D30034D322 /* LaunchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BEAA1D128D202F90034D322 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3BEAA1D228D202FB0034D322 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BEAA1D928D2041B0034D322 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,15 +623,19 @@
 			files = (
 				3B23F45828D0BADF0002ADDE /* NetworkManager.swift in Sources */,
 				3B0FF8DF28A668E600B45ED2 /* UILabel + Extensions.swift in Sources */,
+				3BEAA1D628D203AE0034D322 /* BasePageViewController.swift in Sources */,
 				3B0FF8E228A66C0F00B45ED2 /* SettingsTableViewCell.swift in Sources */,
 				3B53D18A28A3DD4A00210ADE /* LaunchViewController.swift in Sources */,
 				3BC3438728BE49F0000161B0 /* DataCollectionViewCell.swift in Sources */,
+				3BEAA1C228D202460034D322 /* AssemblyBuilder in Sources */,
 				3B53D16A28A3B12F00210ADE /* AppDelegate.swift in Sources */,
 				3BA5280D28C65D6D001C9DD6 /* Ext.swift in Sources */,
 				3B92543428CFB7990092B998 /* TextFormatter.swift in Sources */,
 				3B92542E28CFB75E0092B998 /* Sizes.swift in Sources */,
+				3BEAA1E328D204F10034D322 /* DetailPresenter.swift in Sources */,
 				3B9FA31E28B3A24100AC9927 /* Launch.swift in Sources */,
 				3BC3438B28BE6EA7000161B0 /* Rocket.swift in Sources */,
+				3BEAA1BC28D2013A0034D322 /* NavigtionController.swift in Sources */,
 				3BC3438928BE6619000161B0 /* DataTableViewCell.swift in Sources */,
 				3B92542C28CFB7530092B998 /* Fonts.swift in Sources */,
 				3BA527FA28C64A15001C9DD6 /* PageViewController.swift in Sources */,
@@ -441,20 +646,27 @@
 				3B0FF8DD28A6680000B45ED2 /* SettingsViewController.swift in Sources */,
 				3B9FA32228B3AA1B00AC9927 /* NetworkManager.swift in Sources */,
 				3B99929028BCFFAE002B9AE1 /* String + Extensions.swift in Sources */,
+				3BEAA1DD28D204500034D322 /* MainViewController.swift in Sources */,
 				3B53D18428A3C5DE00210ADE /* DataView.swift in Sources */,
+				3BEAA1DB28D204350034D322 /* RocketData.swift in Sources */,
 				3BA5280F28C66A45001C9DD6 /* RocketsPackViewModel.swift in Sources */,
 				3BA5280728C655DD001C9DD6 /* API.swift in Sources */,
+				3BEAA1BF28D201720034D322 /* Router.swift in Sources */,
 				3B92542A28CFB7430092B998 /* Colors.swift in Sources */,
 				3B23F45A28D0BB090002ADDE /* DataManager.swift in Sources */,
 				3B53D18828A3CA9000210ADE /* UIStackView + Extensions.swift in Sources */,
 				3B92543828CFB7D00092B998 /* UIScrollView + extensions.swift in Sources */,
+				3BEAA1D428D2039B0034D322 /* RocketModel.swift in Sources */,
+				3BEAA1E128D204D30034D322 /* LaunchModel.swift in Sources */,
 				3B0FF8D928A6468700B45ED2 /* UIColor + Extensions.swift in Sources */,
 				3B92543228CFB7870092B998 /* ObserverConstants.swift in Sources */,
 				3B3349A428C7A08400E6260A /* LaunchViewModelPack.swift in Sources */,
 				3B3349A228C7A07400E6260A /* LaunchViewModel.swift in Sources */,
 				3B74778728AE56070016E8EF /* MainVC.swift in Sources */,
 				3B0FF8D728A641C300B45ED2 /* LaunchTableViewCell.swift in Sources */,
+				3BEAA1DF28D2047B0034D322 /* MainPresenter.swift in Sources */,
 				3B53D16C28A3B12F00210ADE /* SceneDelegate.swift in Sources */,
+				3BEAA1D828D203C00034D322 /* BasePresenter.swift in Sources */,
 				3BA5280928C65C8A001C9DD6 /* RocketViewModel.swift in Sources */,
 				3B74777E28AD30A00016E8EF /* Bundle + Extension.swift in Sources */,
 			);
